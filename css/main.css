@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial, sans-serif";
+  background-image: url(./assets/fondo.solo.jpg);
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: flex;
+    justify-content: end;
+  }
+  .titular {
+    display: flex;
+    justify-content: center;
+    color: #f061c5;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-size: 80pt;
+  }
+  .lineas-despliegue {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2vw;
+    font-size: 24pt;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  li {
+    padding: 1vw;
+  }
+  .nav-bottom {
+    margin-top: 550px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu {
+    display: flex;
+    justify-content: end;
+  }
+  .titular {
+    display: flex;
+    justify-content: center;
+    color: #f061c5;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-size: 40pt;
+  }
+  .lineas-despliegue {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 4vw;
+    font-size: 16pt;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  li {
+    padding: 1vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    display: flex;
+    justify-content: end;
+  }
+  .titular {
+    display: flex;
+    justify-content: center;
+    color: #f061c5;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-size: 20pt;
+  }
+  .lineas-despliegue {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 4vw;
+    font-size: 14pt;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  li {
+    margin: 2vw;
+    background-color: rgba(240, 97, 197, 0.3);
+  }
+  .heladoslista {
+    background-color: white;
+    height: 50vh;
+  }
+}
+.custom-INICIO, .custom-FRUTALES, .custom-CREMOSOS {
+  background-color: #fd64dc;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  padding: 10px 60px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.custom-INICIO {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 600px;
+}
+
+.custom-FRUTALES {
+  top: 200%;
+  left: 40%;
+  margin-top: 600px;
+}
+
+.custom-CREMOSOS {
+  top: 200%;
+  left: 60%;
+  margin-top: 600px;
+}
+
+.imagen-superior-derecha,
+.imagen-superior-izquierda,
+.imagen-central-izquierda,
+.imagen-inferior-derecha, .col-md-6 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.imagen-superior-derecha {
+  top: 0px;
+  right: 0px;
+  max-width: 300px;
+}
+
+.imagen-superior-izquierda {
+  top: -40px;
+  left: -30px;
+  max-width: 200px;
+  transform: rotate(145deg);
+}
+
+.imagen-central-izquierda {
+  top: 110px;
+  left: 0px;
+  transform: translateY(-50%);
+  max-width: 300px;
+  margin-top: 350px;
+}
+
+.imagen-inferior-derecha {
+  bottom: -850px;
+  left: 1300px;
+  max-width: 300px;
+}
+
+.titulo {
+  position: absolute;
+  top: 80px;
+  left: 250px;
+  color: #f061c5;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 11em;
+  font-weight: 400;
+}
+
+.slogan,
+.slogan2 {
+  position: absolute;
+  color: black;
+  font-family: "Cookie", cursive;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.slogan {
+  top: 400px;
+  left: 400px;
+}
+
+.slogan2 {
+  top: 450px;
+  right: 400px;
+}
+
+.custom-INICIO, .custom-FRUTALES, .custom-CREMOSOS {
+  background-color: #fd64dc;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  padding: 10px 60px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.custom-INICIO {
+  top: 50%;
+  left: 50%;
+  margin-top: 600px;
+}
+
+.custom-FRUTALES {
+  top: 200%;
+  left: 40%;
+  margin-top: 600px;
+}
+
+.custom-CREMOSOS {
+  top: 200%;
+  left: 60%;
+  margin-top: 600px;
+}
+
+
+.menu {
+  display: flex;
+  justify-content: end;
+}
+
+
+.navbar-dark .navbar-toggler {
+  color: black;
+  border-color: black;
+}
+
+.navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: black;
+}
+
+
+/* styles.css */
+
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background-image: url('../assets/fondo.solo.jpg');
+    background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+}
+
+header, main, footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+  /* header {
+      background-color: #f8b400;
+  }
+  
+  main {
+      background-color: #ffdd57;
+  }
+  
+  footer {
+      background-color: #f8b400;
+  } */
+}
+
+/* Estilos para tablets */
+@media (min-width: 601px) and (max-width: 992px) {
+  /* header {
+      background-color: #4caf50;
+  }
+  
+  main {
+      background-color: #8bc34a;
+  }
+  
+  footer {
+      background-color: #4caf50;
+  } */
+}
+
+/* Estilos para desktops */
+@media (min-width: 993px) {
+  /* header {
+      background-color: #2196f3;
+  }
+  
+  main {
+      background-color: #64b5f6;
+  }
+  
+  footer {
+      background-color: #2196f3;
+  } */
+}
+
+/* styles.css */
+
+/* Asegúrate de que el contenedor esté posicionado relativamente */
+.contenedor {
+  position: relative;
+  padding: 20px;
+}
+
+/* Estilos para la imagen */
+.imagen-derecha {
+  position: absolute; /* Posición absoluta */
+  top: 0; /* Alínea en la parte superior */
+  right: 0; /* Alínea a la derecha */
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para la imagen */
+.imagen-izquierda {
+  position: absolute; /* Posición absoluta */
+  top: 0; /* Alínea en la parte superior */
+  left: 0; /* Alínea a la izquierda */
+  width: 50px; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos básicos del cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Estilo para la imagen */
+.imagen-izquierda {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
