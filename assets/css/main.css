@@ -325,7 +325,7 @@ header, main, footer {
   position: absolute; /* Posición absoluta */
   top: 0; /* Alínea en la parte superior */
   right: 0; /* Alínea a la derecha */
-  width: 300px; /* Ajusta el tamaño según tus necesidades */
+  width: 250px; /* Ajusta el tamaño según tus necesidades */
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
@@ -409,6 +409,17 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.imagen-derecha-abajo {
+  position: absolute; /* Asegura que el posicionamiento sea absoluto respecto al contenedor */
+  bottom: 0; /* Pegado al borde inferior */
+  right: 20px; /* Pegado al borde derecho */
+  width: auto; /* Ajusta el ancho automático */
+  height: auto; /* Ajusta la altura automática */
+  max-width: 200px; /* Establece el tamaño máximo de la imagen */
+  max-height: 100%; /* Limita la altura máxima para que la imagen no exceda el contenedor */
+}
+
 
 .menu-icon {
   position: absolute;
