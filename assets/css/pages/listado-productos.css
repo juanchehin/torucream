@@ -1,0 +1,36 @@
+/* Asegúrate de que el contenedor ocupe toda la altura y el ancho de la página */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.tabla-contenedor {
+    width: calc(100% - 20px); /* Ajusta el ancho del contenedor de la tabla con márgenes */
+    height: calc(100% - 20px); /* Ajusta la altura del contenedor de la tabla con márgenes */
+    padding: 10px; /* Agrega márgenes internos al contenedor */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del contenedor */
+    overflow: auto; /* Asegura que la tabla sea scrollable si es necesario */
+}
+
+.tabla {
+    width: 100%; /* La tabla ocupa todo el ancho del contenedor */
+    border-collapse: separate; /* Usa separación de bordes para agregar espaciado */
+    border-spacing: 0 10px; /* Ajusta el espaciado entre filas */
+    table-layout: fixed; /* Mantiene las celdas del mismo tamaño */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Agrega un borde a las celdas */
+    padding: 8px; /* Agrega padding a las celdas */
+    text-align: left; /* Alinea el texto a la izquierda */
+    background-color: #f8f8f8; /* Color de fondo de las celdas */
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo para los encabezados */
+    font-weight: bold; /* Texto en negrita para los encabezados */
+}

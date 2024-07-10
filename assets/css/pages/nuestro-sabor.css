@@ -1,0 +1,110 @@
+/* Asegúrate de que el contenedor ocupe toda la altura y el ancho de la página */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-template-rows: 1fr 1fr; /* Dos filas iguales */
+    width: 100%;
+    height: 50%; /* Ocupa la mitad de la pantalla */
+}
+
+.grid-container-3-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
+    grid-template-rows: 1fr; /* Una fila */
+    width: 100%;
+    height: 50%; /* Ocupa la otra mitad de la pantalla */
+}
+
+.grid-item, .grid-item-3-columnas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-arriba-izquierda img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor */
+}
+
+.titulo-grid {
+    margin: 0;
+    font-size: 24px; /* Ajusta el tamaño de la fuente del título */
+}
+
+.texto {
+    margin: 10px 0 0 0;
+    font-size: 16px; /* Ajusta el tamaño de la fuente del texto */
+}
+
+.content-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imagenes-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imagenes img {
+    max-width: 60%;
+    max-height: 50%; /* Cada imagen ocupa la mitad del contenedor de imágenes */
+    object-fit: contain;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.texto-abajo-titulo {
+    font-family: 'Sirin Stencil', sans-serif;
+    font-size: 2em; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.texto-abajo {
+    font-family: 'Sirin Stencil', sans-serif;
+    font-size: 1em; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.logo {
+    max-width: 50px; /* Ajusta el tamaño máximo de los logos */
+    margin: 0 10px; /* Espaciado entre los logos */
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaciado entre los logos */
+}
