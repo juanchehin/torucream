@@ -42,9 +42,11 @@ body {
     justify-content: space-between;
     flex-direction: column;
   }
+  /*
   li {
     padding: 1vw;
   }
+    */
   .nav-bottom {
     margin-top: 550px;
   }
@@ -400,11 +402,11 @@ body {
     display: flex;
     justify-content: flex-start; /* Alinea el contenido a la izquierda */
     align-items: center; /* Centra el contenido verticalmente */
-    max-width: 250px; /* Ajusta el tamaño de la imagen */
+    max-width: 200px; /* Ajusta el tamaño de la imagen */
     height: auto;
     position: absolute;
     left: 0;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -428,4 +430,29 @@ body {
   padding: 10px 20px;
   background-color: #333;
   color: white;
+}
+
+.menu {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+  font-size: 18px;
+}
+
+.menu ul li i {
+  margin-right: 10px;
 }
