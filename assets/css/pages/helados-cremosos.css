@@ -1,0 +1,42 @@
+.contenedor-listado {
+    text-align: center;
+    margin: 0 auto;
+    width: 150%;
+    padding: 10px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.lista-helados {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-helados li {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.imagen {
+    margin-left: auto; /* Mueve la imagen a la derecha dentro del contenedor flex */
+    position: relative;
+    left: 200px; /* Mueve la imagen a la derecha */
+    width: 190%;;
+    height: auto;
+}
+
+.imagen-izquierda-abajo {
+    position: absolute; /* Asegura que el posicionamiento sea absoluto respecto al contenedor */
+    bottom: 0; /* Pegado al borde inferior */
+    left: 20px; /* Pegado al borde derecho */
+    width: auto; /* Ajusta el ancho automático */
+    height: auto; /* Ajusta la altura automática */
+    max-width: 150px; /* Establece el tamaño máximo de la imagen */
+    max-height: 100%; /* Limita la altura máxima para que la imagen no exceda el contenedor */
+  }
