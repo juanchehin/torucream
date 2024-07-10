@@ -6,13 +6,13 @@
 
 body {
   font-family: "Arial, sans-serif";
-  background-image: url(./assets/fondo.solo.jpg);
+  background-image: url(../img/fondo.solo.jpg);
   background-size: cover;
 }
 
 .container {
-  position: relative;
-  padding: 20px;
+  text-align: center; /* Centra el texto horizontalmente */
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -189,31 +189,12 @@ body {
 
 .titulo {
   position: absolute;
-  top: 80px;
-  left: 250px;
+  top: 20px;
+  left: 70px;
   color: #f061c5;
   font-family: "Love Ya Like A Sister", cursive;
   font-size: 11em;
   font-weight: 400;
-}
-
-.slogan,
-.slogan2 {
-  position: absolute;
-  color: black;
-  font-family: "Cookie", cursive;
-  font-size: 3em;
-  font-weight: 400;
-}
-
-.slogan {
-  top: 400px;
-  left: 400px;
-}
-
-.slogan2 {
-  top: 450px;
-  right: 400px;
 }
 
 .custom-INICIO, .custom-FRUTALES, .custom-CREMOSOS {
@@ -277,9 +258,6 @@ body {
   margin: 0;
   padding: 0;
 
-  background-image: url('../assets/fondo.solo.jpg');
-    background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
 }
 
 header, main, footer {
@@ -345,7 +323,7 @@ header, main, footer {
   position: absolute; /* Posición absoluta */
   top: 0; /* Alínea en la parte superior */
   right: 0; /* Alínea a la derecha */
-  width: 200px; /* Ajusta el tamaño según tus necesidades */
+  width: 300px; /* Ajusta el tamaño según tus necesidades */
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
@@ -374,4 +352,80 @@ body {
 .imagen-izquierda {
   width: 100px; /* Ajusta el tamaño según tus necesidades */
   height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+.slogan {
+  color: black;
+  font-family: "Cookie", cursive;
+  font-size: 3em;
+  font-weight: 400;
+  margin-left: -400px;
+}
+
+.slogan2 {
+  color: black;
+  font-family: "Cookie", cursive;
+  font-size: 3em;
+  font-weight: 400;
+  margin-right: -250px;
+}
+
+.order-button {
+  color: white;
+  font-size: 24px; /* Aumenta el tamaño de la letra */
+
+  /* Action Row / Single Actions */
+  width: 308px;
+  height: 44px;
+  left: 268px;
+  top: 936px;
+  /*  */
+  background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
+  box-shadow: 0px 4px 4px #FB78F5;
+  border-radius: 48px;
+  border: none; /* Quita el borde */
+
+}
+
+.order-button:hover {
+    background-color: #ff3399;
+}
+
+/* Estilo para la imagen */
+.imagen-izquierda-mano {
+  position: relative;
+    width: 100%; /* Ajusta el ancho del contenedor */
+    height: 100%;
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: center; /* Centra el contenido verticalmente */
+    max-width: 250px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.menu-icon {
+  position: absolute;
+  width: 54px;
+  height: 56px;
+  left: 1280px;
+  top: 19px;
+  
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1; /* Asegurar que el header quede encima de la imagen de fondo */
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
 }
