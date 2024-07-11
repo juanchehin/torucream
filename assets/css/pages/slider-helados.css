@@ -1,0 +1,178 @@
+/* Estilos específicos para pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+      .white-background {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border: none;
+        }
+      
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%; /* Asegura que el body y html ocupen el 100% de la altura */
+          overflow: hidden; /* Elimina las barras de desplazamiento */
+      }
+      
+      .container {
+          display: flex;
+          flex-direction: column;
+          height: 100vh; /* Altura total de la ventana del navegador */
+      }
+      .half {
+          flex: 1; /* Toma el 50% del contenedor */
+          overflow: auto; /* Permite desplazamiento si el contenido es más alto */
+      }
+      .half:first-child {
+          border-bottom: 2px solid black; /* Línea horizontal entre las tablas */
+      }
+      table {
+          width: 100%;
+          border-collapse: collapse;
+      }
+      th, td {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: left;
+      }
+      th {
+          background-color: #f2f2f2;
+      }
+      
+    .slogan {
+      color: black;
+      font-family: "Cookie", cursive;
+    }
+
+    .slogan2 {
+      color: black;
+      font-family: "Cookie", cursive;
+    }
+
+    body {
+      font-family: "Arial, sans-serif";
+      background-image: url(../../img/fondo.solo.jpg);
+      background-size: cover; /* Ajusta la imagen para cubrir todo el área del fondo */
+      background-position: center; /* Centra la imagen en el área de fondo */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll (opcional) */
+      overflow-x: hidden;
+
+    }
+
+    .short-div {
+      height: 100px; /* Altura fija de 100 píxeles */
+    }
+
+    
+  .image-container-s img {
+      width: 100%; /* Ajusta la imagen al ancho del div */
+      height: 100%; /* Ajusta la imagen al alto del div */
+      object-fit: cover; /* Ajusta la imagen para cubrir el área del div sin distorsionarla */
+  }
+
+  .full-width {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
+    background-color: lightblue;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho */
+}
+.half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: none;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0; /* Espacio arriba y abajo del texto */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total del contenedor */
+  font-weight: bold; /* Pone el texto en negrita */
+
+}
+
+.text-container span {
+  flex: 1; /* Hace que cada palabra ocupe la mitad del espacio disponible */
+  display: flex;
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+  font-size: 18px; /* Tamaño del texto */
+}
+
+.image-container-s {
+  width: 100%;
+  padding: 10px 0; /* Espacio arriba y abajo de la imagen */
+}
+
+.image-container-s img {
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene las proporciones de la imagen */
+  display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+.order-button {
+  margin-top: 90px; /* Espacio entre la imagen y el botón */
+  padding: 10px 20px; /* Espacio dentro del botón */
+  font-size: 12px; /* Tamaño del texto del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+
+  color: white;
+  font-size: 24px; /* Aumenta el tamaño de la letra */
+
+  /* Action Row / Single Actions */
+  width: 308px;
+  height: 44px;
+  left: 268px;
+  top: 936px;
+  /*  */
+  background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
+  box-shadow: 0px 4px 4px #FB78F5;
+  border-radius: 48px;
+}
+
+.order-button:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0; /* Espacio arriba y abajo de la imagen */
+}
+
+.image-container .image-small {
+  flex: 1; /* Las imágenes pequeñas ocuparán el espacio disponible */
+  display: flex;
+  justify-content: center; /* Centra las imágenes pequeñas horizontalmente */
+  align-items: center; /* Centra las imágenes pequeñas verticalmente */
+}
+
+.image-container .image-small img {
+  height: 100%; /* Hace que la altura de la imagen pequeña sea igual a la del contenedor */
+  width: 50px; /* Mantiene las proporciones de la imagen */
+  display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+.image-container .image-large {
+  flex: 3; /* La imagen grande ocupará más espacio que las pequeñas */
+  display: flex;
+  justify-content: center; /* Centra la imagen grande horizontalmente */
+}
+
+.image-container .image-large img {
+  width: 100%; /* Ajusta la imagen grande al ancho del contenedor */
+  height: auto; /* Mantiene las proporciones de la imagen */
+  display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+}
