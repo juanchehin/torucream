@@ -1,0 +1,68 @@
+/* Estilos específicos para pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    
+.redes {
+    display: flex;
+    justify-content: flex-end; /* Alinea las imágenes a la derecha */
+    align-items: flex-end; /* Alinea las imágenes al fondo */
+    gap: 10px; /* Espaciado entre las imágenes */
+    height: 100%; /* Ocupa toda la altura disponible */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 20px; /* Padding opcional para separarlo de los bordes */
+    box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
+    position: fixed; /* Fija el contenedor en la pantalla */
+    bottom: 0; /* Alinea el contenedor al fondo */
+    right: 0; /* Alinea el contenedor a la derecha */
+    
+    padding-bottom: 20px;
+    border-bottom-width: 90px;
+    margin-bottom: 200px;
+    margin-right: 150px;
+
+}
+.redes img {
+    width: 40px; /* Ajusta el tamaño de las imágenes */
+    height: 40px; /* Ajusta el tamaño de las imágenes */
+  }
+
+.img-helado-palito{
+    bottom: 0; /* Pegado al borde inferior */
+    right: 2px; /* Pegado al borde derecho */
+    width: auto; /* Ajusta el ancho automático */
+    height: auto; /* Ajusta la altura automática */
+    max-width: 200px; /* Establece el tamaño máximo de la imagen */
+}
+/* Configurar el menú para que esté a la izquierda y ocupe más altura */
+.menu {
+    padding: 20px;
+    height: 100%;
+    width: 250px; /* Ancho del menú */
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left; /* Alinea el contenido del ul a la izquierda */
+  }
+  
+  .menu ul li {
+    margin: 20px 0;
+    font-size: 1.5em;
+    text-align: left; /* Asegura que cada li esté alineado a la izquierda */
+  }
+  
+  .menu ul li i {
+    margin-right: 10px;
+  }
+
+  .white-background {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    }
+  
+}
