@@ -1,0 +1,165 @@
+/* Estilos específicos para pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+  
+    .titulo {
+      position: absolute;
+      top: 20px;
+      left: 5ch;
+      color: #f061c5;
+      font-family: "Love Ya Like A Sister", cursive;
+      font-size: 4em;
+      font-weight: 400;
+    }
+      
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%; /* Asegura que el body y html ocupen el 100% de la altura */
+      overflow: hidden; /* Elimina las barras de desplazamiento */
+    }
+      
+    body {
+      font-family: "Arial, sans-serif";
+      background-image: url(../../img/fondo.solo.jpg);
+      background-size: cover; /* Ajusta la imagen para cubrir todo el área del fondo */
+      background-position: center; /* Centra la imagen en el área de fondo */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll (opcional) */
+      overflow-x: hidden;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh; /* Altura total de la ventana del navegador */
+    }
+      
+    .slogan {
+      color: black;
+      font-family: "Cookie", cursive;
+    }
+
+    .slogan2 {
+      color: black;
+      font-family: "Cookie", cursive;
+    }
+
+
+  .order-button {
+    margin-top: 90px; /* Espacio entre la imagen y el botón */
+    padding: 10px 20px; /* Espacio dentro del botón */
+    font-size: 12px; /* Tamaño del texto del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+
+    color: white;
+    font-size: 24px; /* Aumenta el tamaño de la letra */
+
+    /* Action Row / Single Actions */
+    width: 308px;
+    height: 44px;
+    left: 268px;
+    top: 936px;
+    /*  */
+    background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
+    box-shadow: 0px 4px 4px #FB78F5;
+    border-radius: 48px;
+  }
+
+  .container-ha {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  .centrada-derecha {
+      max-width: 100%;
+      height: auto;
+  }
+
+  
+  .menu-icon {
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    right: 50px; /* Alinea la imagen al borde derecho */
+    top: 9px;
+    font-size: 45px;
+    cursor: pointer;
+    z-index: 1; /* Asegurar que el header quede encima de la imagen de fondo */
+  }
+
+  .contenido {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 100px; /* Espacio entre el título y el contenido, ajusta según sea necesario */
+}
+
+.imagen-izquierda {
+    max-width: 600px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.imagen-izquierda-2 {
+  max-width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+  margin-top: -150px; /* Ajusta este valor para subir la imagen */
+
+}
+
+.texto-derecha {
+    flex: 1;
+}
+
+.texto-derecha h2, .texto-derecha p {
+    margin: 0;
+}
+
+.texto-izquierda {
+  flex: 1;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.seccion {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.texto-abajo-titulo {
+  font-family: 'Sirin Stencil', sans-serif;
+  font-size: 2em; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.texto-abajo {
+  font-family: 'Sirin Stencil', sans-serif;
+  font-size: 1em; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.contenido-seccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.texto-izquierda {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.imagen-derecha img {
+  max-width: 800px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+}
+
+.imagen-derecha {
+  flex-shrink: 0; /* Evita que la imagen se reduzca */
+}
+}

@@ -1,42 +1,135 @@
-.contenedor-listado {
-    text-align: center;
-    margin: 0 auto;
-    width: 150%;
-    padding: 10px;
+/* Estilos específicos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+
 }
 
-h2 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 65px;
+/* Estilos específicos para pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+  .desktop-content {
+    display: none;
+  }
+  
+  .tablet-content {
+    display: block;
+  }
+
+  .mobile-content {
+    display: none;
+  }
+
+  .titulo {
+    top: 20px;
+    left: 9ch;
+    color: #f061c5;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 3em;
+    font-weight: 400;
     font-weight: bold;
+
+  }
+
+  .contenedor-principal {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px; /* Ajusta el padding si es necesario */
+    box-sizing: border-box;
+}
+
+.contenedor-listado {
+    flex: 1;
 }
 
 .lista-helados {
     list-style: none;
     padding: 0;
+    margin: 0;
+    align-items: center; /* Centra los elementos horizontalmente */
+
 }
 
 .lista-helados li {
-    margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 50px; /* Ajusta el tamaño de la fuente según sea necesario */
+    margin: 10px 0; /* Ajusta el espacio entre los ítems si es necesario */
     font-weight: bold;
+
 }
 
-.imagen {
-    margin-left: auto; /* Mueve la imagen a la derecha dentro del contenedor flex */
-    position: relative;
-    left: 200px; /* Mueve la imagen a la derecha */
-    width: 190%;;
+.contenedor-img {
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
     height: auto;
 }
 
+.imagen {
+    max-width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+
+.hel-crem{
+    font-size: 60px; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-weight: bold;
+
+}
+
+
 .imagen-izquierda-abajo {
-    position: absolute; /* Asegura que el posicionamiento sea absoluto respecto al contenedor */
-    bottom: 0; /* Pegado al borde inferior */
-    left: 20px; /* Pegado al borde derecho */
-    width: auto; /* Ajusta el ancho automático */
-    height: auto; /* Ajusta la altura automática */
-    max-width: 150px; /* Establece el tamaño máximo de la imagen */
-    max-height: 100%; /* Limita la altura máxima para que la imagen no exceda el contenedor */
-  }
+    display: block;
+}
+
+.imagen-alineada {
+    text-align: left; /* Alinea el contenido del <li> a la izquierda */
+    position: relative; /* Permite ajustes de posición si es necesario */
+    margin-left: 0; /* Asegura que el margen izquierdo sea 0 */
+}
+
+.imagen-alineada img {
+    display: block; /* Asegura que la imagen no tenga margen adicional */
+    height: auto;
+    width: 150px; /* Ajusta el ancho de la imagen */
+}
+}
+
+
+/* Estilos específicos para pantallas grandes (escritorios) */
+@media (min-width: 1024px) {
+
+
+    .contenedor-listado {
+        text-align: center;
+        margin: 0 auto;
+        width: 150%;
+        padding: 10px;
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 65px;
+        font-weight: bold;
+    }
+
+    .lista-helados {
+        list-style: none;
+        padding: 0;
+    }
+
+    .lista-helados li {
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .imagen {
+        margin-left: auto; /* Mueve la imagen a la derecha dentro del contenedor flex */
+        position: relative;
+        left: 200px; /* Mueve la imagen a la derecha */
+        width: 190%;;
+        height: auto;
+    }
+
+}
