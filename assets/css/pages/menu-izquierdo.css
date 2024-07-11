@@ -1,0 +1,122 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.menu-izquierda {
+    width: 100px;
+    background-color: #eee;
+    padding: 20px;
+
+    background-image: url(../../img/fondo.solo.jpg); /* Cambia esto por la ruta real de tu imagen */
+    background-size: cover; /* Esto asegura que la imagen cubra todo el área del elemento */
+    background-position: center; /* Centra la imagen en el área del elemento */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido, opcional */
+    color: #fff; /* Cambia el color del texto si es necesario para que sea legible sobre la imagen */
+
+}
+
+.menu-izquierda ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.menu-izquierda li {
+    margin-bottom: 25px;
+    font-weight: bold; /* Esto pone el texto en negrita */
+    font-size: 20px;
+
+    background-color: #ffc0cb; /* Color rosa para el fondo de cada <li> */
+    padding: 10px; /* Espacio interno para que el texto no esté pegado al borde */
+    border-radius: 5px; /* Opcional: Bordes redondeados para un efecto más suave */
+    width: 100%; /* Asegura que el <li> ocupe todo el ancho del contenedor ul */
+    box-sizing: border-box;
+}
+
+.menu-izquierda ul li:first-child {
+    margin-top: 90px; /* Ajusta este valor para mover el primer <li> hacia abajo */
+}
+
+
+.menu-izquierda a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contenido-principal {
+    flex: 1;
+    padding: 20px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    margin: 0;
+    color: #333;
+}
+
+    
+.redes {
+    display: flex;
+    justify-content: flex-end; /* Alinea las imágenes a la derecha */
+    align-items: flex-end; /* Alinea las imágenes al fondo */
+    gap: 10px; /* Espaciado entre las imágenes */
+    height: 100%; /* Ocupa toda la altura disponible */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
+    position: fixed; /* Fija el contenedor en la pantalla */
+    bottom: 0; /* Alinea el contenedor al fondo */
+    right: 0; /* Alinea el contenedor a la derecha */
+    
+    padding-bottom: 20px;
+    border-bottom-width: 90px;
+    margin-right: 20px;
+
+}
+.redes img {
+    width: 40px; /* Ajusta el tamaño de las imágenes */
+    height: 40px; /* Ajusta el tamaño de las imágenes */
+  }
+
+  .menu ul {
+    list-style-type: none;
+  }
+  
