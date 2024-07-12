@@ -51,17 +51,6 @@
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
-  .desktop-content {
-    display: none;
-  }
-
-  .tablet-content {
-    display: none;
-  }
-
-  .mobile-content {
-    display: block;
-  }
 }
 
 
@@ -255,7 +244,7 @@ header, main, footer {
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
-
+/* 
 .menu {
   position: absolute;
   bottom: 20px;
@@ -279,7 +268,7 @@ header, main, footer {
 
 .menu ul li i {
   margin-right: 10px;
-}
+} */
   
 
 .slogan {

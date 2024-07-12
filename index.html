@@ -48,10 +48,10 @@
             <div class="image-container">
                 <img src="./assets/img/mano.hombre.png" alt="mano hombre" class="imagen-izquierda-mano">
             </div>
+            
             </br></br>
             <!-- ==================================== -->
             <div class="container">
-                <body>                
                     </br></br></br>
                     <div>
                         <h2 class="slogan">Helados que derriten tu corazón,</h2> 
@@ -61,12 +61,11 @@
                     <div>
                         <button class="order-button">PEDIR AHORA</button>
                         <img src="./assets/img/helado_palito.png" alt="helado" class="imagen-derecha-abajo">
-
                     </div>
-                </body>
             </div>
             <!-- ==================================== -->
-            <div class="menu desktop-content">
+           
+            <div class="menu desktop-content" id="menu">
                 <ul>
                     <li><i class="fas fa-home"></i> INICIO</li>
                     <li><i class="fas fa-book"></i> MENU</li>
@@ -75,23 +74,14 @@
                     <li><i class="fas fa-info-circle"></i> NOSOTROS</li>
                 </ul>
             </div>
-            
         </main>
+        
         <!-- ==================================== -->
         <!-- ========== FIN MAIN ================ -->
-        <!-- ==================================== -->
-
-        <!-- ==================================== -->
-        <!-- ========== FOOTER ================ -->
-        <!-- ==================================== -->
-        <footer>
-        </footer>
-        <!-- ==================================== -->
-        <!-- ========== FIN FOOTER ================ -->
-        <!-- ==================================== -->
+        <!-- ==================================== -->     
     </div>
     <!-- ================ TABLET ==================== -->
-    <div class="white-background tablet-content">
+    <div class="white-background tablet-content" id="white">
         <div class="menu">
             <ul>
                 <li><i class="fas fa-home"></i> INICIO</li>
@@ -113,6 +103,9 @@
     <!-- ==================================== -->
 
     <script>
+        var white = document.getElementById('white');
+        var menu = document.getElementById('menu');
+
         function detectarDispositivo() {
             const anchoPantalla = window.innerWidth;
 
@@ -122,6 +115,9 @@
                 console.log("Estás en una tablet");
             } else {
                 console.log("Estás en un desktop");
+                
+                menu.style.display = 'block';
+                white.remove();
             }
         }
 
