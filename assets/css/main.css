@@ -19,6 +19,17 @@
 /* Estilos específicos para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
 
+  .desktop-content {
+    display: none;
+  }
+
+  .tablet-content {
+    display: none;
+  }
+
+  .mobile-content {
+    display: block;
+  }
   
 .titulo {
   position: absolute;
@@ -87,16 +98,6 @@
     align-items: center; /* Centra el contenido horizontalmente */
     min-height: 100vh;
   }
-
-  .container-responsive,* {
-    /* width: 80%; */
-    max-width: 1200px;
-    padding: 20px;
-    text-align: center; /* Opcional: centra el texto en el contenedor */
-    margin: 0;
-    padding: 0;
-  }
-
 
 .titulo {
   position: absolute;

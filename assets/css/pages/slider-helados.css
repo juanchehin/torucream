@@ -1,66 +1,87 @@
 /* Estilos específicos para pantallas medianas (tablets) */
 @media (min-width: 768px) and (max-width: 1023px) {
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-responsive,* {
+    /* width: 80%; */
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center; /* Opcional: centra el texto en el contenedor */
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Arial, sans-serif";
+    background-image: url(../../img/fondo.solo.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área del fondo */
+    background-position: center; /* Centra la imagen en el área de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll (opcional) */
+    overflow-x: hidden;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
     
-      .white-background {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        background-color: white;
-        border: none;
-        }
-      
-        html, body {
-          margin: 0;
-          padding: 0;
-          height: 100%; /* Asegura que el body y html ocupen el 100% de la altura */
-          overflow: hidden; /* Elimina las barras de desplazamiento */
-      }
-      
-      .container {
-          display: flex;
-          flex-direction: column;
-          height: 100vh; /* Altura total de la ventana del navegador */
-      }
-      .half {
-          flex: 1; /* Toma el 50% del contenedor */
-          overflow: auto; /* Permite desplazamiento si el contenido es más alto */
-      }
-      .half:first-child {
-          border-bottom: 2px solid black; /* Línea horizontal entre las tablas */
-      }
-      table {
-          width: 100%;
-          border-collapse: collapse;
-      }
-      th, td {
-          border: 1px solid black;
-          padding: 8px;
-          text-align: left;
-      }
-      th {
-          background-color: #f2f2f2;
-      }
-      
-    .slogan {
-      color: black;
-      font-family: "Cookie", cursive;
+  .white-background {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: none;
     }
+  
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%; /* Asegura que el body y html ocupen el 100% de la altura */
+      overflow: hidden; /* Elimina las barras de desplazamiento */
+  }
+  
+  .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh; /* Altura total de la ventana del navegador */
+  }
+  .half {
+      flex: 1; /* Toma el 50% del contenedor */
+      overflow: auto; /* Permite desplazamiento si el contenido es más alto */
+  }
+  .half:first-child {
+      border-bottom: 2px solid black; /* Línea horizontal entre las tablas */
+  }
+  table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+  th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+  }
+  th {
+      background-color: #f2f2f2;
+  }
+  
+.slogan {
+  color: black;
+  font-family: "Cookie", cursive;
+}
 
     .slogan2 {
       color: black;
       font-family: "Cookie", cursive;
     }
 
-    body {
-      font-family: "Arial, sans-serif";
-      background-image: url(../../img/fondo.solo.jpg);
-      background-size: cover; /* Ajusta la imagen para cubrir todo el área del fondo */
-      background-position: center; /* Centra la imagen en el área de fondo */
-      background-repeat: no-repeat; /* Evita que la imagen se repita */
-      background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll (opcional) */
-      overflow-x: hidden;
 
-    }
 
     .short-div {
       height: 100px; /* Altura fija de 100 píxeles */
