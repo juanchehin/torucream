@@ -1,36 +1,143 @@
-/* Asegúrate de que el contenedor ocupe toda la altura y el ancho de la página */
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+/* styles.css */
+body {
+    background-image: url(../../img/fondo.solo.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área del body */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
 }
 
-.tabla-contenedor {
-    width: calc(100% - 20px); /* Ajusta el ancho del contenedor de la tabla con márgenes */
-    height: calc(100% - 20px); /* Ajusta la altura del contenedor de la tabla con márgenes */
-    padding: 10px; /* Agrega márgenes internos al contenedor */
-    box-sizing: border-box; /* Incluye el padding en el tamaño total del contenedor */
-    overflow: auto; /* Asegura que la tabla sea scrollable si es necesario */
+/* styles.css */
+.background-div {
+    background-image: url(../../img/fondo.solo.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área del div */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%; /* Ajusta el ancho del div */
+    height: 500px; /* Ajusta la altura del div */
 }
 
-.tabla {
-    width: 100%; /* La tabla ocupa todo el ancho del contenedor */
-    border-collapse: separate; /* Usa separación de bordes para agregar espaciado */
-    border-spacing: 0 10px; /* Ajusta el espaciado entre filas */
-    table-layout: fixed; /* Mantiene las celdas del mismo tamaño */
+.titulo {
+    text-align: center; /* Centra el texto y la imagen dentro del body */
+    font-family: 'Choco Cookie', sans-serif; /* Aplica la fuente Choco Cookie */
+    font-size: 40px;
 }
 
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Usa border-spacing en lugar de border-collapse: collapse; */
+    border-spacing: 0 10px; /* Espacio entre las filas (10px de ejemplo) */
+}
 th, td {
-    border: 1px solid #ddd; /* Agrega un borde a las celdas */
-    padding: 8px; /* Agrega padding a las celdas */
-    text-align: left; /* Alinea el texto a la izquierda */
-    background-color: #f8f8f8; /* Color de fondo de las celdas */
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
 }
 
-th {
-    background-color: #f2f2f2; /* Color de fondo para los encabezados */
-    font-weight: bold; /* Texto en negrita para los encabezados */
+
+.row-background {
+    background-color: #ffc0cb; /* Rosa claro */
 }
+.row-content {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacia el contenido entre los extremos */
+}
+.row-content img {
+    max-width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+.row-content .text {
+    flex: 1; /* Ocupa el espacio restante */
+    padding-left: 10px; /* Espacio entre la imagen y el texto */
+}
+.row-content .price {
+    text-align: right; /* Alinea el precio a la derecha */
+    padding-left: 10px; /* Espacio entre el texto y el precio */
+}
+
+.row-content img {
+    max-width: 50px;
+    height: auto;
+}
+.row-content .text-container {
+    flex: 1;
+    padding-left: 10px;
+    text-align: left;
+
+    font-family: 'Choco Cookie', sans-serif; /* Aplica la fuente Choco Cookie */
+    font-size: 22px;
+    font-weight: bold;
+}
+.text-container .top-text {
+    display: block; /* Muestra el texto en una línea separada */
+    font-size: 1.1em; /* Tamaño de fuente para el texto superior */
+}
+.text-container .bottom-text {
+    display: block; /* Muestra el texto en una línea separada */
+    font-size: 0.9em; /* Tamaño de fuente para el texto inferior */
+}
+.row-content .price {
+    text-align: right;
+    padding-left: 10px;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    padding: 20px; /* Espacio interno para que no quede pegado al borde */
+    
+}
+.bottom-section img {
+    max-width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+.bottom-section .text-center {
+    text-align: center;
+    flex: 1; /* Ocupa el espacio restante entre la imagen y el texto de la derecha */
+}
+.bottom-section .text-right {
+    text-align: right;
+}
+
+
+.order-button {
+    color: white;
+    font-size: 19px; /* Aumenta el tamaño de la letra */
+  
+    /* Action Row / Single Actions */
+    width: 208px;
+    height: 44px;
+    left: 268px;
+    top: 900px;
+    /*  */
+    background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
+    box-shadow: 0px 4px 4px #FB78F5;
+    border-radius: 48px;
+    border: none; /* Quita el borde */
+    transform: translateY(-50px);
+  }
+  
+.items-precios {  
+    font-family: 'Choco Cookie', sans-serif; /* Aplica la fuente Choco Cookie */
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    position: absolute;
+    width: 54px;
+    height: 56px;
+    left: 1280px;
+    top: 19px;
+    
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1; /* Asegurar que el header quede encima de la imagen de fondo */
+  
+  }
