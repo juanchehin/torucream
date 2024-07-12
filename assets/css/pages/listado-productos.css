@@ -58,6 +58,9 @@ th {
 .row-content .price {
     text-align: right; /* Alinea el precio a la derecha */
     padding-left: 10px; /* Espacio entre el texto y el precio */
+    font-family: 'Choco Cookie', sans-serif; /* Aplica la fuente Choco Cookie */
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .row-content img {
