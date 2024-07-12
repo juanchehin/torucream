@@ -1,0 +1,147 @@
+$color_1: #f061c5;
+$color_2: black;
+$color_3: #fff;
+$color_4: white;
+$font-family_1: "Love Ya Like A Sister", cursive;
+$font-family_2: "Arial, sans-serif";
+$font-family_3: "Cookie", cursive;
+$font-family_4: 'Sirin Stencil', sans-serif;
+
+/* Estilos específicos para pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.titulo {
+		position: absolute;
+		top: 20px;
+		left: 5ch;
+		color: $color_1;
+		font-family: $font-family_1;
+		font-size: 4em;
+		font-weight: 400;
+	}
+	html {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		overflow: hidden;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		overflow: hidden;
+		font-family: $font-family_2;
+		background-image: url(../../img/fondo.solo.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		overflow-x: hidden;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+	}
+	.slogan {
+		color: $color_2;
+		font-family: $font-family_3;
+	}
+	.slogan2 {
+		color: $color_2;
+		font-family: $font-family_3;
+	}
+	.order-button {
+		margin-top: 90px;
+		padding: 10px 20px;
+		font-size: 12px;
+		color: $color_3;
+		border: none;
+		cursor: pointer;
+		transition: background-color 0.3s;
+		color: $color_4;
+		font-size: 24px;
+		width: 308px;
+		height: 44px;
+		left: 268px;
+		top: 936px;
+		background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
+		box-shadow: 0px 4px 4px #FB78F5;
+		border-radius: 48px;
+	}
+	.container-ha {
+		display: flex;
+		justify-content: flex-end;
+		height: 100%;
+	}
+	.centrada-derecha {
+		max-width: 100%;
+		height: auto;
+	}
+	.menu-icon {
+		position: absolute;
+		width: 14px;
+		height: 16px;
+		right: 50px;
+		top: 9px;
+		font-size: 45px;
+		cursor: pointer;
+		z-index: 1;
+	}
+	.contenido {
+		display: flex;
+		align-items: flex-start;
+		padding: 20px;
+		margin-top: 100px;
+	}
+	.imagen-izquierda {
+		max-width: 600px;
+		margin-right: 20px;
+	}
+	.imagen-izquierda-2 {
+		max-width: 200px;
+		margin-right: 20px;
+		margin-top: -150px;
+	}
+	.texto-derecha {
+		flex: 1;
+		h2 {
+			margin: 0;
+		}
+		p {
+			margin: 0;
+		}
+	}
+	.texto-izquierda {
+		flex: 1;
+		text-align: left;
+		flex: 1;
+		text-align: left;
+		padding-right: 20px;
+	}
+	.seccion {
+		flex: 1;
+		padding: 20px;
+		text-align: center;
+	}
+	.texto-abajo-titulo {
+		font-family: $font-family_4;
+		font-size: 2em;
+	}
+	.texto-abajo {
+		font-family: $font-family_4;
+		font-size: 1em;
+	}
+	.contenido-seccion {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+	.imagen-derecha {
+		img {
+			max-width: 800px;
+			height: auto;
+		}
+		flex-shrink: 0;
+	}
+}

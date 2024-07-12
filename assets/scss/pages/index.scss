@@ -1,0 +1,196 @@
+$background-color_1: white;
+
+/* Estilos específicos para pantallas medianas (tablets) */
+/* Configurar el menú para que esté a la izquierda y ocupe más altura */
+/* Estilos específicos para pantallas grandes (escritorios) */
+/* Configurar el menú para que esté a la izquierda y ocupe más altura */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.desktop-content {
+		display: block;
+	}
+	.tablet-content {
+		display: none;
+	}
+	.mobile-content {
+		display: none;
+	}
+	html {
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
+	body {
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
+	.container-responsive {
+		max-width: 1200px;
+		padding: 20px;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	* {
+		max-width: 1200px;
+		padding: 20px;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	.redes {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		gap: 10px;
+		height: 100%;
+		width: 100%;
+		padding: 20px;
+		box-sizing: border-box;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		padding-bottom: 20px;
+		border-bottom-width: 90px;
+		margin-bottom: 20px;
+		margin-right: 0px;
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	.img-helado-palito {
+		bottom: 0;
+		right: 2px;
+		width: auto;
+		height: auto;
+		max-width: 200px;
+	}
+	.menu {
+		padding: 20px;
+		height: 100%;
+		width: 250px;
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			text-align: left;
+			li {
+				margin: 20px 0;
+				font-size: 1.5em;
+				text-align: left;
+				i {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.white-background {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		background-color: $background-color_1;
+	}
+	.imagen-derecha-abajo {
+		bottom: 0;
+		right: 90px;
+		width: auto;
+		height: auto;
+		max-width: 180px;
+	}
+}
+@media (min-width: 1024px) {
+	.desktop-content {
+		display: none;
+	}
+	.tablet-content {
+		display: block;
+	}
+	.mobile-content {
+		display: none;
+	}
+	html {
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
+	body {
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
+	.container-responsive {
+		padding: 20px;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	* {
+		padding: 20px;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	.container {
+		margin-top: 90px;
+	}
+	.redes {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		gap: 10px;
+		height: 100%;
+		width: 100%;
+		padding: 20px;
+		box-sizing: border-box;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		padding-bottom: 20px;
+		border-bottom-width: 90px;
+		margin-bottom: 20px;
+		margin-right: 0px;
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	.img-helado-palito {
+		bottom: 0;
+		right: 2px;
+		width: auto;
+		height: auto;
+		max-width: 200px;
+	}
+	.menu {
+		padding: 20px;
+		width: 250px;
+		margin-top: -100px;
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			text-align: left;
+			li {
+				margin: 0;
+				padding: 5px 0;
+				font-size: 1em;
+				text-align: left;
+				i {
+					margin-right: 2px;
+				}
+			}
+		}
+	}
+	.white-background {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		background-color: $background-color_1;
+	}
+	.imagen-derecha-abajo {
+		bottom: 0;
+		right: 90px;
+		width: auto;
+		height: auto;
+		max-width: 180px;
+	}
+}

@@ -1,0 +1,47 @@
+$background-color_1: #f8f8f8;
+$background-color_2: #f2f2f2;
+
+/* Asegúrate de que el contenedor ocupe toda la altura y el ancho de la página */
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tabla-contenedor {
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	padding: 10px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+.tabla {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+	table-layout: fixed;
+}
+th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+	background-color: $background-color_1;
+	background-color: $background-color_2;
+	font-weight: bold;
+}
+td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+	background-color: $background-color_1;
+}
