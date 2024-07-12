@@ -91,6 +91,7 @@
     display: block; /* Asegura que la imagen no tenga margen adicional */
     height: auto;
     width: 150px; /* Ajusta el ancho de la imagen */
+
 }
 }
 
@@ -102,7 +103,6 @@
     .contenedor-listado {
         text-align: center;
         margin: 0 auto;
-        width: 150%;
         padding: 10px;
     }
 
@@ -131,5 +131,11 @@
         width: 190%;;
         height: auto;
     }
+
+    .imagen-izquierda-abajo {
+        display: block;
+        padding-right: 2000px;
+    }
+    
 
 }
