@@ -98,6 +98,7 @@ th {
     height: auto;
 }
 .bottom-section .text-center {
+    margin-top: 90px;
     text-align: center;
     flex: 1; /* Ocupa el espacio restante entre la imagen y el texto de la derecha */
 }
