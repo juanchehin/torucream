@@ -138,7 +138,7 @@
   }
 
   .container {
-    margin-top: 90px;
+    margin-top: 200px;
   }
 
 
@@ -177,7 +177,7 @@
   .menu {
     padding: 20px;
     width: 250px; /* Ancho del menú */
-    margin-top: -100px;
+    margin-top: -10px;
     }
 
     .menu ul {
