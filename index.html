@@ -31,10 +31,11 @@
             <h1 class="titulo">torucream</h1>
             <i class="fas fa-bars menu-icon"></i>
             <img src="./assets/img/helado_inclinado.png" alt="Imagen" class="imagen-izquierda">
-            <img src="./assets/img/amarillo.home.png" alt="Imagen" class="imagen-derecha">
-            
+            <img src="./assets/img/amarillo.home.png" alt="Imagen" class="imagen-derecha desktop-content">
+            <img src="./assets/img/amarillo.home.png" alt="Imagen" class="imagen-derecha-mobile mobile-content">
+
         </header>
-        
+
         <!-- ==================================== -->
         <!-- ========== FIN HEADER ================ -->
         <!-- ==================================== -->
@@ -42,7 +43,6 @@
         <!-- ==================================== -->
         <!-- ========== MAIN ================ -->
         <!-- ==================================== -->
-         <main>
             <div class="image-container">
                 <img src="./assets/img/mano.hombre.png" alt="mano hombre" class="imagen-izquierda-mano">
             </div>
@@ -51,15 +51,42 @@
             <!-- ==================================== -->
             <div class="container">
                     
-                    <div>
-                        <h2 class="slogan">Helados que derriten tu corazón,</h2> 
-                        <h2 class="slogan2">Donde cada sabor es una aventura</h2>
+                <div class="desktop-content" id="slogan-desk">
+                    <div class="short-div">
+                        <h2 class="slogan desktop-content">Helados que derriten tu corazón,</h2> 
+                        <h2 class="slogan2 desktop-content">Donde cada sabor es una aventura</h2>
+        
+                        <h2 class="slogan-mobile mobile-content">Helados que derriten tu corazón,</h2> 
+                        <h2 class="slogan2-mobile mobile-content">Donde cada sabor es una aventura</h2>
                     </div>
                     
                     <div>
-                        <button id="boton-pedir-ahora" onclick="pedirAhora()" class="order-button">PEDIR AHORA</button>
-                        <img src="./assets/img/helado_palito.png" alt="helado" class="imagen-derecha-abajo">
+                        <img src="../assets/img/helado_palito.png" alt="Imagen" class="imagen-derecha-abajo desktop-content">
+                        <img src="../assets/img/helado_palito.png" alt="Imagen" class="imagen-derecha-abajo-mobile mobile-content">
+        
                     </div>
+                    
+                </div>
+                <img src="./assets/img/helado_palito.png" alt="helado" class="imagen-derecha-abajo-mobile mobile-content">
+                <!-- ================= MOBILE =================== -->
+                <div class="mobile-content">
+                    <div class="slogan-content">
+                        <h2 class="slogan-mobile">Helados que derriten tu corazón,</h2> 
+                        <h2 class="slogan2-mobile">Donde cada sabor es una aventura</h2>
+                    </div>
+                    <div class="menu-mobile">
+                        <ul>
+                            <li><i class="fas fa-home"></i> INICIO</li>
+                            <li><i class="fas fa-book"></i> MENU</li>
+                            <li><i class="fas fa-phone"></i> CONTACTOS</li>
+                            <li><i class="fas fa-map-marker-alt"></i> SUCURSALES</li>
+                            <li><i class="fas fa-info-circle"></i> NOSOTROS</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+                <!-- =============== MOBILE ===================== -->
+
             </div>
             <!-- ==================================== -->
            
@@ -72,11 +99,36 @@
                     <li><i class="fas fa-info-circle"></i> NOSOTROS</li>
                 </ul>
             </div>
-        </main>
         
         <!-- ==================================== -->
         <!-- ========== FIN MAIN ================ -->
         <!-- ==================================== -->     
+    </div>
+    
+    <div class="white-background mobile-content" id="white-mobile">
+        <div class="image-container"> 
+            <!-- Imagen pequeña izquierda -->
+            <div class="image-small">
+                <img src="./assets/img/flecha-izquierda.png" alt="Imagen Pequeña 1">
+            </div>
+            
+            <div class="image-container-s">
+                <img src="./assets/img/helados-slider.png" alt="Imagen">
+            </div>    
+            
+            <!-- Imagen pequeña derecha -->
+            <div class="image-small">
+                <img src="./assets/img/flecha-derecha.png" alt="Imagen Pequeña 2">
+            </div>
+        </div>
+        <div class="text-container">
+            <span>FRUTALES</span>
+            <span>CREMOSOS</span>
+        </div>
+        
+        <div>
+            <button class="order-button">PEDIR AHORA</button>
+        </div>
     </div>
     <!-- ================ TABLET ==================== -->
     <div class="white-background tablet-content" id="white">
@@ -98,11 +150,13 @@
             <img src="./assets/img/logo-tt.png" alt="TT" class="logo">
         </div>
     </div>
-    <!-- ==================================== -->
-
+    
     <script>
         var white = document.getElementById('white');
         var menu = document.getElementById('menu');
+        var white_mobile = document.getElementById('white-mobile');
+        var slogan_desk = document.getElementById('slogan-desk');
+       
 
         function detectarDispositivo() {
             const anchoPantalla = window.innerWidth;
@@ -112,18 +166,24 @@
                 console.log("Estás en un dispositivo móvil");
                 menu.style.display = 'none';
                 white.style.display = 'none';
+                white_mobile.style.display = 'block';
+                slogan_desk.style.display = 'none';
 
             } else if (anchoPantalla >= 768 && anchoPantalla <= 1024) {
                 console.log("Estás en una tablet");
                 white.style.display = 'block';
                 menu.style.display = 'none';
-                
+                white_mobile.style.display = 'none';
+                slogan_desk.style.display = 'none';
+
 
             } else {
                 console.log("Estás en un desktop");
                 
                 menu.style.display = 'block';
                 white.style.display = 'none';
+                white_mobile.style.display = 'none';
+                slogan_desk.style.display = 'block';
 
                 // white.remove();
             }
