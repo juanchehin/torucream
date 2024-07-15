@@ -58,7 +58,7 @@
                     </div>
                     
                     <div>
-                        <button class="order-button">PEDIR AHORA</button>
+                        <button id="boton-pedir-ahora" onclick="pedirAhora()" class="order-button">PEDIR AHORA</button>
                         <img src="./assets/img/helado_palito.png" alt="helado" class="imagen-derecha-abajo">
                     </div>
             </div>
@@ -107,6 +107,7 @@
 
         function detectarDispositivo() {
             const anchoPantalla = window.innerWidth;
+            console.log("anchoPantalla ",anchoPantalla);
 
             if (anchoPantalla <= 767) {
                 console.log("Estás en un dispositivo móvil");
@@ -134,6 +135,17 @@
 
         // Ejecutar la función al cambiar el tamaño de la ventana
         window.addEventListener('resize', detectarDispositivo);
+
+        function pedirAhora() {
+            const localUrl = 'file:///D:/dev/torucream'; // Ajusta según tu entorno local
+            const productionUrl = 'https://torucream.free.nf/submenu.html'; // Ajusta según tu servidor
+            
+            if (window.location.origin === 'file://') {
+                window.location.href = localUrl + '/pages/submenu.html';
+            } else {
+                window.location.href = productionUrl;
+            }
+        }
     </script>
 </body>
 </html>
