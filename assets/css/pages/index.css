@@ -185,7 +185,6 @@ body {
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll (opcional) */
   overflow-x: hidden;
-
 }
 
 .short-div {
@@ -765,6 +764,7 @@ margin-right: 10px;
   height: auto; /* Ajusta la altura automática */
   max-width: 200px; /* Establece el tamaño máximo de la imagen */
   max-height: 100%; /* Limita la altura máxima para que la imagen no exceda el contenedor */
+  position: fixed;
 }
 
 
