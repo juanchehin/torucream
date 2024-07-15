@@ -1,8 +1,9 @@
-/* Estilos específicos para pantallas medianas (tablets) */
-@media (min-width: 768px) and (max-width: 1023px) {
+
+/* Estilos específicos para pantallas chicas (mobile) */
+@media (max-width: 767px) {
 
   .desktop-content {
-    display: block;
+    display: none;
   }
 
   .tablet-content {
@@ -10,7 +11,7 @@
   }
 
   .mobile-content {
-    display: none;
+    display: block;
   }
 
   html, body {
@@ -108,6 +109,297 @@
 }
 
 
+/* Estilos específicos para pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .desktop-content {
+    display: block;
+  }
+
+  .tablet-content {
+    display: none;
+  }
+
+  .mobile-content {
+    display: none;
+  }
+
+  html, body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+
+  body {
+      background-image: url(../../img/fondo.solo.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex; /* Usa flexbox para centrar el contenido */
+      flex-direction: column; /* Cambia a row si quieres alineación horizontal */
+      align-items: center; /* Centra el contenido horizontalmente */
+      min-height: 100vh;
+    }
+  
+  .container-responsive,* {
+    /* width: 80%; */
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center; /* Opcional: centra el texto en el contenedor */
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    margin-top: 200px;
+  }
+
+
+  .redes {
+      display: flex;
+      justify-content: flex-end; /* Alinea las imágenes a la derecha */
+      align-items: flex-end; /* Alinea las imágenes al fondo */
+      gap: 10px; /* Espaciado entre las imágenes */
+      height: 100%; /* Ocupa toda la altura disponible */
+      width: 100%; /* Ocupa todo el ancho disponible */
+      padding: 20px; /* Padding opcional para separarlo de los bordes */
+      box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
+      position: fixed; /* Fija el contenedor en la pantalla */
+      bottom: 0; /* Alinea el contenedor al fondo */
+      right: 0; /* Alinea el contenedor a la derecha */
+      
+      padding-bottom: 20px;
+      border-bottom-width: 90px;
+      margin-bottom: 20px;
+      margin-right: 0px;
+
+  }
+  .redes img {
+      width: 40px; /* Ajusta el tamaño de las imágenes */
+      height: 40px; /* Ajusta el tamaño de las imágenes */
+    }
+
+  .img-helado-palito{
+      bottom: 0; /* Pegado al borde inferior */
+      right: 2px; /* Pegado al borde derecho */
+      width: auto; /* Ajusta el ancho automático */
+      height: auto; /* Ajusta la altura automática */
+      max-width: 200px; /* Establece el tamaño máximo de la imagen */
+  }
+  /* Configurar el menú para que esté a la izquierda y ocupe más altura */
+  .menu {
+      padding: 20px;
+      height: 100%;
+      width: 250px; /* Ancho del menú */
+    }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left; /* Alinea el contenido del ul a la izquierda */
+  }
+  
+  .menu ul li {
+    margin: 20px 0;
+    font-size: 1.5em;
+    text-align: left; /* Asegura que cada li esté alineado a la izquierda */
+  }
+  
+  .menu ul li i {
+    margin-right: 10px;
+  }
+
+  .white-background {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    flex: 1; /* Toma todo el espacio disponible */
+
+    }
+      
+  .imagen-derecha-abajo {
+    bottom: 0; /* Pegado al borde inferior */
+    right: 90px; /* Pegado al borde derecho */
+    width: auto; /* Ajusta el ancho automático */
+    height: auto; /* Ajusta la altura automática */
+    max-width: 180px; /* Establece el tamaño máximo de la imagen */
+  }
+
+
+.titulo {
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  color: #f061c5;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 5em;
+  font-weight: 150;
+}
+
+/* Estilos para la imagen */
+.imagen-izquierda {
+  position: absolute; /* Posición absoluta */
+  top: 0; /* Alínea en la parte superior */
+  left: 0; /* Alínea a la izquierda */
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo para la imagen */
+.imagen-izquierda-mano {
+  position: relative;
+    width: 100%; /* Ajusta el ancho del contenedor */
+    height: 100%;
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: center; /* Centra el contenido verticalmente */
+    max-width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 29%;
+    transform: translateY(-50%);
+}
+
+/* Estilos para la imagen */
+.imagen-derecha {
+  position: absolute; /* Posiciona la imagen de forma absoluta */
+  top: 0; /* Alinea la imagen al borde superior */
+  right: 0; /* Alinea la imagen al borde derecho */
+  margin: 10px; /* Opcional: agrega margen alrededor de la imagen */
+  max-width: 260px; /* Ajusta el tamaño de la imagen */
+
+}
+
+
+.imagen-derecha-abajo {
+  bottom: 0; /* Pegado al borde inferior */
+  right: 2px; /* Pegado al borde derecho */
+  width: auto; /* Ajusta el ancho automático */
+  height: auto; /* Ajusta la altura automática */
+  max-width: 180px; /* Establece el tamaño máximo de la imagen */
+}
+
+.slogan {
+  color: black;
+  font-family: "Cookie", cursive;
+  font-size: 2em;
+  font-weight: 200;
+  margin-left: -50px;
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+
+.slogan2 {
+  color: black;
+  font-family: "Cookie", cursive;
+  font-size: 2em;
+  font-weight: 200;
+  margin-right: -240px;
+  margin-top: -50px;
+}
+
+
+.order-button {
+  color: white;
+  font-size: 24px; /* Aumenta el tamaño de la letra */
+
+  /* Action Row / Single Actions */
+  width: 308px;
+  height: 44px;
+  left: 268px;
+  top: 936px;
+  /*  */
+  background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
+  box-shadow: 0px 4px 4px #FB78F5;
+  border-radius: 48px;
+  border: none; /* Quita el borde */
+  transform: translateY(-50px);
+}
+
+
+.menu-icon {
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  right: 50px; /* Alinea la imagen al borde derecho */
+  top: 9px;
+  font-size: 45px;
+  cursor: pointer;
+  z-index: 1; /* Asegurar que el header quede encima de la imagen de fondo */
+}
+
+
+.container-responsive,* {
+/* width: 80%; */
+max-width: 1200px;
+padding: 20px;
+text-align: center; /* Opcional: centra el texto en el contenedor */
+margin: 0;
+padding: 0;
+}
+
+.container {
+margin-top: 200px;
+}
+
+
+.redes {
+  display: flex;
+  justify-content: flex-end; /* Alinea las imágenes a la derecha */
+  align-items: flex-end; /* Alinea las imágenes al fondo */
+  gap: 10px; /* Espaciado entre las imágenes */
+  height: 100%; /* Ocupa toda la altura disponible */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 20px; /* Padding opcional para separarlo de los bordes */
+  box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
+  position: fixed; /* Fija el contenedor en la pantalla */
+  bottom: 0; /* Alinea el contenedor al fondo */
+  right: 0; /* Alinea el contenedor a la derecha */
+  
+  padding-bottom: 20px;
+  border-bottom-width: 90px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+
+}
+.redes img {
+  width: 40px; /* Ajusta el tamaño de las imágenes */
+  height: 40px; /* Ajusta el tamaño de las imágenes */
+}
+
+/* Configurar el menú para que esté a la izquierda y ocupe más altura */
+.menu {
+  padding: 20px;
+  height: 100%;
+  width: 250px; /* Ancho del menú */
+}
+
+.menu ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+text-align: left; /* Alinea el contenido del ul a la izquierda */
+}
+
+.menu ul li {
+margin: 20px 0;
+font-size: 1.5em;
+text-align: left; /* Asegura que cada li esté alineado a la izquierda */
+}
+
+.menu ul li i {
+margin-right: 10px;
+}
+
+
+}
+
+
 /* Estilos específicos para pantallas grandes (escritorios) */
 @media (min-width: 1024px) {
 
@@ -143,6 +435,158 @@
   .container {
     margin-top: 200px;
   }
+
+  body {
+    font-family: "Arial, sans-serif";
+    background-image: url(../../img/fondo.solo.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área del fondo */
+    background-position: center; /* Centra la imagen en el área de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll (opcional) */
+    overflow-x: hidden;
+  
+  }
+  
+  
+  header, main, footer {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* styles.css */
+  
+  /* Asegúrate de que el contenedor esté posicionado relativamente */
+  .contenedor {
+    position: relative;
+    padding: 20px;
+  }
+  
+  
+  /* Estilos para la imagen */
+  .imagen-izquierda {
+    position: absolute; /* Posición absoluta */
+    top: 0; /* Alínea en la parte superior */
+    left: 0; /* Alínea a la izquierda */
+    width: 50px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  
+.slogan {
+  color: black;
+  font-family: "Cookie", cursive;
+  font-size: 3em;
+  font-weight: 400;
+  margin-left: -490px;
+}
+
+.slogan2 {
+  color: black;
+  font-family: "Cookie", cursive;
+  font-size: 3em;
+  font-weight: 400;
+  margin-right: -250px;
+}
+
+  
+.titulo {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+  color: #f061c5;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 11em;
+  font-weight: 400;
+}
+
+
+/* Estilos para la imagen */
+.imagen-derecha {
+  position: absolute; /* Posición absoluta */
+  top: 0; /* Alínea en la parte superior */
+  right: 0; /* Alínea a la derecha */
+  width: 250px; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo para la imagen */
+.imagen-izquierda {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+.order-button {
+  color: white;
+  font-size: 24px; /* Aumenta el tamaño de la letra */
+
+  /* Action Row / Single Actions */
+  width: 308px;
+  height: 44px;
+  left: 268px;
+  top: 936px;
+  /*  */
+  background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
+  box-shadow: 0px 4px 4px #FB78F5;
+  border-radius: 48px;
+  border: none; /* Quita el borde */
+
+}
+
+.order-button:hover {
+    background-color: #ff3399;
+}
+
+/* Estilo para la imagen */
+.imagen-izquierda-mano {
+  position: relative;
+    width: 100%; /* Ajusta el ancho del contenedor */
+    height: 100%;
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: center; /* Centra el contenido verticalmente */
+    max-width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.imagen-derecha-abajo {
+  position: absolute; /* Asegura que el posicionamiento sea absoluto respecto al contenedor */
+  bottom: 0; /* Pegado al borde inferior */
+  right: 20px; /* Pegado al borde derecho */
+  width: auto; /* Ajusta el ancho automático */
+  height: auto; /* Ajusta la altura automática */
+  max-width: 200px; /* Establece el tamaño máximo de la imagen */
+  max-height: 100%; /* Limita la altura máxima para que la imagen no exceda el contenedor */
+}
+
+
+.menu-icon {
+  position: absolute;
+  width: 54px;
+  height: 56px;
+  left: 1280px;
+  top: 19px;
+  
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1; /* Asegurar que el header quede encima de la imagen de fondo */
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+
 
 
   .redes {
@@ -220,4 +664,3 @@
   }
 
 }
-
