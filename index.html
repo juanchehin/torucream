@@ -24,7 +24,7 @@
 
 </head>
 <body>
-    <div class="container-responsive tablet-content">
+    <div class="container-responsive">
         <!-- ==================================== -->
         <!-- ========== HEADER ================ -->
         <!-- ==================================== -->
@@ -110,13 +110,22 @@
 
             if (anchoPantalla <= 767) {
                 console.log("Estás en un dispositivo móvil");
+                menu.style.display = 'none';
+                white.style.display = 'none';
+
             } else if (anchoPantalla >= 768 && anchoPantalla <= 1024) {
                 console.log("Estás en una tablet");
+                white.style.display = 'block';
+                menu.style.display = 'none';
+                
+
             } else {
                 console.log("Estás en un desktop");
                 
                 menu.style.display = 'block';
-                white.remove();
+                white.style.display = 'none';
+
+                // white.remove();
             }
         }
 
