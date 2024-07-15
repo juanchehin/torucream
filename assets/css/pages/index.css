@@ -266,6 +266,12 @@ display: block; /* Elimina el espacio debajo de la imagen */
     border-radius: 48px;
 }
 
+.boton-pedir-desktop {
+  margin-top: 200px;
+}
+
+
+
   .order-button:hover {
   background-color: #0056b3; /* Color de fondo al pasar el ratón */
   }
@@ -613,20 +619,15 @@ margin-right: 10px;
 
   
   .desktop-content {
-    display: none;
+    display: block;
   }
 
   .tablet-content {
-    display: block;
+    display: none;
   }
 
   .mobile-content {
     display: none;
-  }
-
-  html, body {
-    overflow-y: hidden;
-    overflow-x: hidden;
   }
 
 
@@ -651,15 +652,10 @@ margin-right: 10px;
     background-position: center; /* Centra la imagen en el área de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll (opcional) */
-    overflow-x: hidden;
+
   
   }
   
-  
-  header, main, footer {
-    padding: 20px;
-    text-align: center;
-  }
   
   /* styles.css */
   
@@ -832,7 +828,7 @@ margin-right: 10px;
   .menu {
     padding: 20px;
     width: 250px; /* Ancho del menú */
-    margin-top: -10px;
+    margin-top: 100px;
     }
 
     .menu ul {
@@ -855,6 +851,7 @@ margin-right: 10px;
 
     }
   
+    
   .white-background {
     display: flex;
     align-items: center;
