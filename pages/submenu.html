@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <meta name="description" content="Disfruta de los mejores helados artesanales elaborados con ingredientes naturales y mucho amor. Ven y prueba nuestras delicias únicas y frescas.">
     <link rel="icon" href="../assets/img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
@@ -58,7 +57,7 @@
             <br><br>
             <div>
                 <button class="order-button">FRUTALES</button>&emsp;&emsp;
-                <button class="order-button">CREMOSOS</button>
+                <button class="order-button" onclick="redirectCremosos()">CREMOSOS</button>
             </div>
         </div>
     </main>
@@ -75,5 +74,43 @@
     <!-- ==================================== -->
     <!-- ========== FIN FOOTER ================ -->
      <!-- ==================================== -->
+      
+     <script>       
+
+        function detectarDispositivo() {
+            const anchoPantalla = window.innerWidth;
+            console.log("anchoPantalla ",anchoPantalla);
+
+            if (anchoPantalla <= 767) {
+                console.log("Estás en un dispositivo móvil");
+
+            } else if (anchoPantalla >= 768 && anchoPantalla <= 1024) {
+                console.log("Estás en una tablet");
+
+
+            } else {
+                console.log("Estás en un desktop");
+
+                // white.remove();
+            }
+        }
+
+        // Ejecutar la función al cargar la página
+        detectarDispositivo();
+
+        // Ejecutar la función al cambiar el tamaño de la ventana
+        window.addEventListener('resize', detectarDispositivo);
+
+        function redirectCremosos() {
+            const localUrl = 'file:///D:/dev/torucream'; // Ajusta según tu entorno local
+            const productionUrl = 'https://torucream.free.nf/cremosos.html'; // Ajusta según tu servidor
+            
+            if (window.location.origin === 'file://') {
+                window.location.href = localUrl + '/pages/cremosos.html';
+            } else {
+                window.location.href = productionUrl;
+            }
+        }
+    </script>
 </body>
 </html>
