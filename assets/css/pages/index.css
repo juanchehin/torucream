@@ -45,8 +45,8 @@
   
   .titulo {
     position: absolute;
-    top: 60px;
-    left: 50px;
+    top: 30px;
+    left: 190px;
     color: #f061c5;
     font-family: "Love Ya Like A Sister", cursive;
     font-size: 2em;
@@ -104,7 +104,7 @@
 .slogan-mobile {
   color: black;
   font-family: "Cookie", cursive;
-  font-size: 1em;
+  font-size: 2em;
   font-weight: 200;
   margin-left: 40px;
   margin-top: 100px;
@@ -116,7 +116,7 @@
 .slogan2-mobile {
   color: black;
   font-family: "Cookie", cursive;
-  font-size: 1em;
+  font-size: 2em;
   font-weight: 200;
   margin-right: -240px;
   margin-top: -50px;
@@ -243,14 +243,14 @@ display: block; /* Elimina el espacio debajo de la imagen */
 }
 
 .order-button {
-    margin-top: 90px; /* Espacio entre la imagen y el botón */
+    margin-top: 30px; /* Espacio entre la imagen y el botón */
     padding: 10px 20px; /* Espacio dentro del botón */
     font-size: 12px; /* Tamaño del texto del botón */
     color: #fff; /* Color del texto del botón */
     border: none; /* Elimina el borde del botón */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     transition: background-color 0.3s; /* Transición suave para el color de fondo */
-
+    margin-left: 180px;
     color: white;
     font-size: 24px; /* Aumenta el tamaño de la letra */
 
