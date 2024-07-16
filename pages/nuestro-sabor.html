@@ -19,7 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main-container">
+    <!-- ============ DESKTOP =======================  -->
+    <div class="desktop-content main-container" id="desktop">
         <div class="grid-container">
             <div class="grid-item imagen-arriba-izquierda">
                 <img src="../assets/img/dos-helados-vertical.png" alt="Imagen">
@@ -60,5 +61,89 @@
             </div>
         </div>
     </div>
+    <!-- ============ MOBILE =======================  -->
+    <div class="mobile-content main-container" id="mobile">
+        <header>
+            <h1 class="titulo">torucream</h1>
+            <i class="fas fa-bars menu-icon"></i>
+        </header>
+        <!-- ====================== -->
+        <!-- ====================== -->
+        <div class="seccion">
+            <div class="contenido">
+                <img src="../assets/img/helado_vaso.png" alt="Descripción de la imagen" class="imagen-izquierda">
+                <div class="texto-derecha">
+                    <h2 class="texto-abajo-titulo">Sabores</h2>
+                    <p class="texto-abajo">cada uno de nuestros sabores nace de una receta única</p>
+                </div>
+            </div>
+        </div>
+        <!-- ====================== -->
+        <!-- ====================== -->
+        <div class="seccion">
+
+            <div class="contenido-seccion">
+                <div class="texto-izquierda">
+                    <h2 class="texto-abajo-titulo">Tradicion</h2>
+                    <p class="texto-abajo">Elaboramos helados con el mejor sabor desde hace 50 años, siguiendo</p>
+                    <p class="texto-abajo">nuestras raices y la vision de esos emprendedores que llegaron a este</p>
+                    <p class="texto-abajo">continente durante los siglos XIX y XX</p>
+    
+                </div>
+                <div class="imagen-derecha">
+                    <img src="../assets/img/amarillo.home.png" alt="Descripción de la imagen">
+                </div>
+            </div>
+        </div>
+        <!-- ====================== -->
+        <!-- ====================== -->
+        <div class="seccion">
+            <div class="contenido">
+                <img src="../assets/img/helados.fondos.amarillos.jpg" alt="Descripción de la imagen" class="imagen-izquierda-2">
+                <div class="texto-derecha">
+                    <h2 class="texto-abajo-titulo">Locales</h2>
+                    <p class="texto-abajo">mas de 120 locales en todo el mundo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        var desktop = document.getElementById('desktop');
+        var mobile = document.getElementById('mobile');
+
+
+        function detectarDispositivo() {
+            const anchoPantalla = window.innerWidth;
+            console.log("anchoPantalla ",anchoPantalla);
+
+            if (anchoPantalla <= 767) {
+                console.log("Estás en un dispositivo móvil");
+                desktop.style.display = 'none';
+                mobile.style.display = 'block';
+
+            } else if (anchoPantalla >= 768 && anchoPantalla <= 1024) {
+                console.log("Estás en una tablet");
+                desktop.style.display = 'none';
+                mobile.style.display = 'block';
+
+
+            } else {
+                console.log("Estás en un desktop");
+                mobile.style.display = 'none';
+                desktop.style.display = 'block';
+
+                // white.remove();
+            }
+        }
+
+        // Ejecutar la función al cargar la página
+        detectarDispositivo();
+
+        // Ejecutar la función al cambiar el tamaño de la ventana
+        window.addEventListener('resize', detectarDispositivo);
+
+    </script>
 </body>
 </html>
