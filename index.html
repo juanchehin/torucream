@@ -84,7 +84,7 @@
                             <li><i class="fas fa-book"></i> MENU</li>
                             <li><i class="fas fa-phone"></i> CONTACTOS</li>
                             <li><i class="fas fa-map-marker-alt"></i> SUCURSALES</li>
-                            <li><i class="fas fa-info-circle"></i> NOSOTROS</li>
+                            <li onclick="redirectNosotros()"><i class="fas fa-info-circle"></i> NOSOTROS</li>
                         </ul>
                     </div>
                 </div>
@@ -100,7 +100,11 @@
                     <li><i class="fas fa-book"></i> MENU</li>
                     <li><i class="fas fa-phone"></i> CONTACTOS</li>
                     <li><i class="fas fa-map-marker-alt"></i> SUCURSALES</li>
-                    <li><i class="fas fa-info-circle"></i> NOSOTROS</li>
+                    <li>
+                        <a style="cursor: pointer;" onclick="redirectNosotros()">
+                            <i class="fas fa-info-circle"></i> NOSOTROS
+                        </a>
+                    </li>
                 </ul>
             </div>
         
@@ -205,6 +209,17 @@
             
             if (window.location.origin === 'file://') {
                 window.location.href = localUrl + '/pages/submenu.html';
+            } else {
+                window.location.href = productionUrl;
+            }
+        }
+
+        function redirectNosotros() {
+            const localUrl = 'file:///D:/dev/torucream'; // Ajusta según tu entorno local
+            const productionUrl = 'https://torucream.free.nf/nuestro-sabor.html'; // Ajusta según tu servidor
+            
+            if (window.location.origin === 'file://') {
+                window.location.href = localUrl + '/pages/nuestro-sabor.html';
             } else {
                 window.location.href = productionUrl;
             }

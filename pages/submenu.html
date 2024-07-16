@@ -75,7 +75,7 @@
         </div>
         <br><br>
         <div class="desktop-content center-button-desk">
-            <button class="order-button">FRUTALES</button>&emsp;&emsp;
+            <button class="order-button" onclick="redirectFrutales()">FRUTALES</button>&emsp;&emsp;
             <button class="order-button" onclick="redirectCremosos()">CREMOSOS</button>
         </div>
 
@@ -140,6 +140,17 @@
             
             if (window.location.origin === 'file://') {
                 window.location.href = localUrl + '/pages/helados-cremosos.html';
+            } else {
+                window.location.href = productionUrl;
+            }
+        }
+
+        function redirectFrutales() {
+            const localUrl = 'file:///D:/dev/torucream'; // Ajusta según tu entorno local
+            const productionUrl = 'https://torucream.free.nf/helados-frutales.html'; // Ajusta según tu servidor
+            
+            if (window.location.origin === 'file://') {
+                window.location.href = localUrl + '/pages/helados-frutales.html';
             } else {
                 window.location.href = productionUrl;
             }
