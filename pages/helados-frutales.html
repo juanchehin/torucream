@@ -36,7 +36,7 @@
     <!-- ==================================== -->
     <main>
         <!-- ==================================== -->
-        <div>
+        <div class="desktop-content">
             <div class="titulo-crem">
                 <h2 class="hel-crem">HELADOS FRUTALES</h2>
             </div>
@@ -63,10 +63,126 @@
             </div>
         </div> 
         <!-- ==================================== -->
+         <!-- ==================================== -->
+         <div class="mobile-content table-mobile" id="mobile">
+            <div class="titulo-crem">
+                <h2 class="hel-crem">FRUTALES</h2>
+            </div>
+            <br>
+            <table>
+                <tbody>
+                    <tr class="row-background">
+                        <td colspan="3">
+                            <div class="row-content">
+                                <div class="text-container">
+                                    <span class="top-text">FRANBUESA</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- -->
+                    <tr class="row-background">
+                        <td colspan="3">
+                            <div class="row-content">
+                                <div class="text-container">
+                                    <span class="top-text">MANGO</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--  -->
+                    <tr class="row-background">
+                        <td colspan="3">
+                            <div class="row-content">
+                                <div class="text-container">
+                                    <span class="top-text">FRUTILLA</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                     <!--  -->
+                     <tr class="row-background">
+                        <td colspan="3">
+                            <div class="row-content">
+                                <div class="text-container">
+                                    <span class="top-text">MARACUYA</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                     <!--  -->
+                     <tr class="row-background">
+                        <td colspan="3">
+                            <div class="row-content">
+                                <div class="text-container">
+                                    <span class="top-text">CEREZA</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                     <!--  -->
+                     <tr class="row-background">
+                        <td colspan="3">
+                            <div class="row-content">
+                                <div class="text-container">
+                                    <span class="top-text">BANANA</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                     <!--  -->
+                     <tr class="row-background">
+                        <td colspan="3">
+                            <div class="row-content">
+                                <div class="text-container">
+                                    <span class="top-text">ANANA</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                     <!--  -->
+                     <tr class="row-background">
+                        <td colspan="3">
+                            <div class="row-content">
+                                <div class="text-container">
+                                    <span class="top-text">LIMON</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
     </main>
     <!-- ==================================== -->
     <!-- ========== FIN MAIN ================ -->
      <!-- ==================================== -->
+     <script>
+        var desktop = document.getElementById('desktop');
+        var mobile = document.getElementById('mobile');       
 
+        function detectarDispositivo() {
+            const anchoPantalla = window.innerWidth;
+            console.log("anchoPantalla ",anchoPantalla);
+
+            if (anchoPantalla <= 767) {
+                console.log("Estás en un dispositivo móvil");
+                desktop.style.display = 'none';
+                mobile.style.display = 'block';
+
+            } else if (anchoPantalla >= 768) {
+                console.log("Estás en una tablet / desk");
+                desktop.style.display = 'block';
+                mobile.style.display = 'none';
+            }
+        }
+
+        // Ejecutar la función al cargar la página
+        detectarDispositivo();
+
+        // Ejecutar la función al cambiar el tamaño de la ventana
+        window.addEventListener('resize', detectarDispositivo);
+
+    </script>
 </body>
 </html>
