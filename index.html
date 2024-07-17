@@ -33,6 +33,7 @@
             <img src="./assets/img/helado_inclinado.png" alt="Imagen" class="imagen-izquierda">
             <img src="./assets/img/amarillo.home.png" alt="Imagen" class="imagen-derecha desktop-content">
             <img src="./assets/img/amarillo.home.png" alt="Imagen" class="imagen-derecha-mobile mobile-content">
+            <img src="./assets/img/amarillo.home.png" alt="Imagen" class="imagen-derecha-tablet tablet-content">
 
         </header>
 
@@ -45,8 +46,27 @@
         <!-- ==================================== -->
             <div class="image-container">
                 <img src="./assets/img/mano.hombre.png" alt="mano hombre" class="imagen-izquierda-mano">
+                 <!-- ================= TABLET =================== -->
+                 <div class="tablet-content tablet-div">
+                    <div class="slogan-content">
+                        <h2 class="slogan-tablet">Helados que derriten tu corazón,<br><br>
+                            &emsp;&emsp;&emsp;&emsp;Donde cada sabor es una aventura <br><br><br><br>
+                            <button class="order-button" onclick="pedirAhora()">PEDIR AHORA</button>
+                        </h2>
+                    </div>
+                    <div class="menu-mobile">
+                        <ul>
+                            <li><i class="fas fa-home"></i> INICIO</li>
+                            <li><i class="fas fa-book"></i> MENU</li>
+                            <li><i class="fas fa-phone"></i> CONTACTOS</li>
+                            <li><i class="fas fa-map-marker-alt"></i> SUCURSALES</li>
+                            <li onclick="redirectNosotros()"><i class="fas fa-info-circle"></i> NOSOTROS</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+                <!-- =============== FIN TABLET ===================== -->
             </div>
-            
             
             <!-- ==================================== -->
             <div class="container">
@@ -90,6 +110,7 @@
                 </div>
                 <!--  -->
                 <!-- =============== MOBILE ===================== -->
+                
 
             </div>
             <!-- ==================================== -->
@@ -138,27 +159,28 @@
             <button class="order-button">PEDIR AHORA</button>
         </div>
     </div>
-    <!-- ================ TABLET ==================== -->
-    <div class="white-background tablet-content" id="white">
-        <div class="menu">
-            <ul>
-                <li><i class="fas fa-home"></i> INICIO</li>
-                <li><i class="fas fa-book"></i> MENU</li>
-                <li><i class="fas fa-phone"></i> CONTACTOS</li>
-                <li><i class="fas fa-map-marker-alt"></i> SUCURSALES</li>
-                <li><i class="fas fa-info-circle"></i> NOSOTROS</li>
-            </ul>
-        </div>
-        <!--  -->
-        <div class="redes mobile-content">
-            <img src="./assets/img/logo-fb.png" alt="Facebook" class="logo">
-            <img src="./assets/img/logo-ig.png" alt="Instagram" class="logo">
-            <img src="./assets/img/logo-wp.png" alt="Wp" class="logo">
-            <img src="./assets/img/logo-yt.png" alt="YT" class="logo">
-            <img src="./assets/img/logo-tt.png" alt="TT" class="logo">
+    <div class="container-white tablet-content">
+        <!-- ================ TABLET ==================== -->
+        <div class="white-background" id="white">
+            <div class="menu">
+                <ul>
+                    <li><i class="icon fas fa-home"></i> INICIO</li>
+                    <li><i class="icon fas fa-book"></i> MENU</li>
+                    <li><i class="icon fas fa-phone"></i> CONTACTOS</li>
+                    <li><i class="icon fas fa-map-marker-alt"></i> SUCURSALES</li>
+                    <li><i class="icon fas fa-info-circle"></i> NOSOTROS</li>
+                </ul>
+            </div>
+            <!--  -->
+            <div class="redes mobile-content">
+                <img src="./assets/img/logo-fb.png" alt="Facebook" class="logo">
+                <img src="./assets/img/logo-ig.png" alt="Instagram" class="logo">
+                <img src="./assets/img/logo-wp.png" alt="Wp" class="logo">
+                <img src="./assets/img/logo-yt.png" alt="YT" class="logo">
+                <img src="./assets/img/logo-tt.png" alt="TT" class="logo">
+            </div>
         </div>
     </div>
-    
     <script>
         var white = document.getElementById('white');
         var menu = document.getElementById('menu');

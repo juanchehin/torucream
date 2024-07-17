@@ -323,11 +323,11 @@ display: block; /* Elimina el espacio debajo de la imagen */
 @media (min-width: 768px) and (max-width: 1023px) {
 
   .desktop-content {
-    display: block;
+    display: none;
   }
 
   .tablet-content {
-    display: none;
+    display: block;
   }
 
   .mobile-content {
@@ -402,38 +402,45 @@ display: block; /* Elimina el espacio debajo de la imagen */
   }
   /* Configurar el menú para que esté a la izquierda y ocupe más altura */
   .menu {
-      padding: 20px;
-      height: 100%;
-      width: 250px; /* Ancho del menú */
-    }
-  
-  .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: left; /* Alinea el contenido del ul a la izquierda */
+    padding: 20px;
+    height: 70px;
+    width: 150px; /* Ancho del menú */
   }
-  
+
+  .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: left; /* Alinea el contenido del ul a la izquierda */
+  }
+
   .menu ul li {
     margin: 20px 0;
     font-size: 1.5em;
-    text-align: left; /* Asegura que cada li esté alineado a la izquierda */
-  }
-  
-  .menu ul li i {
-    margin-right: 10px;
+    text-align: left; /* Alinea el contenido del li a la izquierda */
+    display: flex; /* Utiliza Flexbox para alinear el icono y el texto */
+    align-items: center; /* Alinea verticalmente el icono y el texto */    
   }
 
+  .menu ul li i {
+      margin-right: 10px;
+  }
   .white-background {
     display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
     background-color: white;
-    flex: 1; /* Toma todo el espacio disponible */
-    position: fixed;
-    }
-      
+    border: none;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-260px);
+    flex: 1;
+  }
+
+  .container-white {
+    display: flex;
+    flex-direction: column;
+    min-height: 37vh;
+  }
+
   .imagen-derecha-abajo {
     bottom: 0; /* Pegado al borde inferior */
     right: 90px; /* Pegado al borde derecho */
@@ -446,7 +453,7 @@ display: block; /* Elimina el espacio debajo de la imagen */
 .titulo {
   position: absolute;
   top: 80px;
-  left: 60px;
+  left: -120px;
   color: #f061c5;
   font-family: "Love Ya Like A Sister", cursive;
   font-size: 5em;
@@ -497,25 +504,43 @@ display: block; /* Elimina el espacio debajo de la imagen */
   max-width: 180px; /* Establece el tamaño máximo de la imagen */
 }
 
-.slogan {
+
+/* Estilos para la imagen */
+.imagen-derecha-tablet {
+  position: absolute; /* Posiciona la imagen de forma absoluta */
+  top: 0; /* Alinea la imagen al borde superior */
+  right: 0; /* Alinea la imagen al borde derecho */
+  margin: 10px; /* Opcional: agrega margen alrededor de la imagen */
+  max-width: 250px; /* Ajusta el tamaño de la imagen */
+  height: 400px;
+}
+
+
+.slogan-tablet {
   color: black;
   font-family: "Cookie", cursive;
   font-size: 2em;
   font-weight: 200;
-  margin-left: -50px;
+  margin-left: -60px;
   margin-top: 100px;
   margin-bottom: 90px;
+  transform: translateX(40px);
+
 }
 
-.slogan2 {
+.slogan2-tablet {
   color: black;
   font-family: "Cookie", cursive;
   font-size: 2em;
   font-weight: 200;
   margin-right: -240px;
   margin-top: -50px;
+  transform: translateX(100px);
 }
 
+.slogan-content {
+  transform: translateY(-500px);
+}
 
 .order-button {
   color: white;
@@ -585,30 +610,9 @@ margin-top: 200px;
   height: 40px; /* Ajusta el tamaño de las imágenes */
 }
 
-/* Configurar el menú para que esté a la izquierda y ocupe más altura */
-.menu {
-  padding: 20px;
-  height: 100%;
-  width: 250px; /* Ancho del menú */
+.tablet-div {
+  transform: translateY(-190px);
 }
-
-.menu ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-text-align: left; /* Alinea el contenido del ul a la izquierda */
-}
-
-.menu ul li {
-margin: 20px 0;
-font-size: 1.5em;
-text-align: left; /* Asegura que cada li esté alineado a la izquierda */
-}
-
-.menu ul li i {
-margin-right: 10px;
-}
-
 
 }
 
