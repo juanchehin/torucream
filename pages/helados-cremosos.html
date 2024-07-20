@@ -45,16 +45,16 @@
                     <div class="helado-copa desktop-content">
                         <img src="../assets/img/helado_vaso.png" alt="Descripción de la imagen">
                     </div> 
-                    <ul class="lista-helados">
-                        <li>AMERICANA</li>
-                        <li>OREO</li>
-                        <li>CHOCOLATE</li>
-                        <li>PISTACHO</li>
-                        <li>CHOCOLATE BLANCO</li>
-                        <li>TIRAMISU</li>
-                        <li>DULCE DE LECHE</li>
-                        <li>MASCARPONE</li>
-                        <li class="imagen-alineada">
+                    <ul class="lista-helados" >
+                        <li style="cursor: pointer;" onclick="redirectProductos()">AMERICANA</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">OREO</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">CHOCOLATE</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">PISTACHO</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">CHOCOLATE BLANCO</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">TIRAMISU</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">DULCE DE LECHE</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">MASCARPONE</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()" class="imagen-alineada">
                             <img src="../assets/img/helado_lineas.png" alt="Imagen" class="imagen-izquierda-abajo">
                         </li>
                     </ul>
@@ -218,6 +218,17 @@
 
         // Ejecutar la función al cambiar el tamaño de la ventana
         window.addEventListener('resize', detectarDispositivo);
+
+        function redirectProductos() {
+            const localUrl = 'file:///D:/dev/torucream'; // Ajusta según tu entorno local
+            const productionUrl = 'https://torucream.free.nf/pages/listado-productos.html'; // Ajusta según tu servidor
+            
+            if (window.location.origin === 'file://') {
+                window.location.href = localUrl + '/pages/listado-productos.html';
+            } else {
+                window.location.href = productionUrl;
+            }
+        }
         
     </script>
 </body>

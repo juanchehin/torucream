@@ -71,7 +71,7 @@
         </div>
         <br><br><br>
         <div class="center-button-desk">
-            <button class="order-button desktop-content">PEDIR AHORA</button>
+            <button class="order-button desktop-content" onclick="boton_inicio()">INICIO</button>
         </div>
         <br><br>
         <div class="desktop-content center-button-desk">
@@ -151,6 +151,17 @@
             
             if (window.location.origin === 'file://') {
                 window.location.href = localUrl + '/pages/helados-frutales.html';
+            } else {
+                window.location.href = productionUrl;
+            }
+        }
+
+        function boton_inicio() {
+            const localUrl = 'file:///D:/dev/torucream'; // Ajusta según tu entorno local
+            const productionUrl = 'https://torucream.free.nf/'; // Ajusta según tu servidor
+            
+            if (window.location.origin === 'file://') {
+                window.location.href = localUrl + '/index.html';;
             } else {
                 window.location.href = productionUrl;
             }

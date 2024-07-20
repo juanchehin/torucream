@@ -47,15 +47,15 @@
                         <img src="../assets/img/helado_vaso.png" alt="Descripción de la imagen">
                     </div> 
                     <ul class="lista-helados">
-                        <li>FAMBRUESA</li>
-                        <li>MANGO</li>
-                        <li>FRUTILLA</li>
-                        <li>MARACUYA</li>
-                        <li>CEREZA</li>
-                        <li>BANANA</li>
-                        <li>ANANA</li>
-                        <li>LIMON</li>
-                        <li class="imagen-alineada">
+                        <li style="cursor: pointer;" onclick="redirectProductos()">FAMBRUESA</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">MANGO</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">FRUTILLA</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">MARACUYA</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">CEREZA</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">BANANA</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">ANANA</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()">LIMON</li>
+                        <li style="cursor: pointer;" onclick="redirectProductos()" class="imagen-alineada">
                             <img src="../assets/img/helado_lineas.png" alt="Imagen" class="imagen-izquierda-abajo">
                         </li>
                     </ul>
@@ -182,6 +182,17 @@
 
         // Ejecutar la función al cambiar el tamaño de la ventana
         window.addEventListener('resize', detectarDispositivo);
+
+        function redirectProductos() {
+            const localUrl = 'file:///D:/dev/torucream'; // Ajusta según tu entorno local
+            const productionUrl = 'https://torucream.free.nf/pages/listado-productos.html'; // Ajusta según tu servidor
+            
+            if (window.location.origin === 'file://') {
+                window.location.href = localUrl + '/pages/listado-productos.html';
+            } else {
+                window.location.href = productionUrl;
+            }
+        }
 
     </script>
 </body>
