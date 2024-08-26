@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los sabores más deliciosos y refrescantes en nuestra heladería. Ofrecemos helados artesanales, sorbetes naturales y postres congelados de la más alta calidad. ¡Visítanos y disfruta de una experiencia única de sabor!">
+    <meta name="keywords" content="helados, helados artesanales, sorbetes naturales, postres congelados, heladería, sabores de helado, helados gourmet, helados caseros, helados saludables, helados sin azúcar, helados veganos, helados sin lactosa, helados de frutas, helados de chocolate, helados de vainilla, helados de fresa, mejores helados, helados en verano, helados deliciosos, tienda de helados">
+    <meta name="author" content="coderhouse">
+    <meta name="robots" content="index, follow">
+
     <title>Pre-entrega2 Perez</title>
     <link rel="stylesheet" href="../assets/css/pages/listado-productos.css">
 
@@ -10,11 +16,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
+
 <body>
     <!-- ===== DESKTOP ======== -->
     <div class="background-div desktop-content" id="desktop">
         <h1 class="titulo">LISTA DE PRODUCTOS</h1>
-        <i class="fas fa-bars hamburger-icon menu-icon"></i>        
+        <i class="fas fa-bars hamburger-icon menu-icon"></i>
 
         <table>
             <tbody>
@@ -76,7 +83,7 @@
     <!-- ===== MOBILE ======== -->
     <div class="background-div mobile-content" id="mobile">
         <h1 class="titulo">LISTA DE PRODUCTOS</h1>
-        <i class="fas fa-bars hamburger-icon menu-icon"></i>        
+        <i class="fas fa-bars hamburger-icon menu-icon"></i>
 
         <table>
             <tbody>
@@ -112,8 +119,8 @@
                         </div>
                     </td>
                 </tr>
-                  <!--  -->
-                  <tr class="row-background">
+                <!--  -->
+                <tr class="row-background">
                     <td colspan="3">
                         <div class="row-content">
                             <div class="text-container">
@@ -142,11 +149,11 @@
 
     <script>
         var desktop = document.getElementById('desktop');
-        var mobile = document.getElementById('mobile');       
+        var mobile = document.getElementById('mobile');
 
         function detectarDispositivo() {
             const anchoPantalla = window.innerWidth;
-            console.log("anchoPantalla ",anchoPantalla);
+            console.log("anchoPantalla ", anchoPantalla);
 
             if (anchoPantalla <= 767) {
                 console.log("Estás en un dispositivo móvil");
@@ -165,7 +172,7 @@
 
         // Ejecutar la función al cambiar el tamaño de la ventana
         window.addEventListener('resize', detectarDispositivo);
-
     </script>
 </body>
+
 </html>

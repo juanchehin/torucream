@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los sabores más deliciosos y refrescantes en nuestra heladería. Ofrecemos helados artesanales, sorbetes naturales y postres congelados de la más alta calidad. ¡Visítanos y disfruta de una experiencia única de sabor!">
+    <meta name="keywords" content="helados, helados artesanales, sorbetes naturales, postres congelados, heladería, sabores de helado, helados gourmet, helados caseros, helados saludables, helados sin azúcar, helados veganos, helados sin lactosa, helados de frutas, helados de chocolate, helados de vainilla, helados de fresa, mejores helados, helados en verano, helados deliciosos, tienda de helados">
+    <meta name="author" content="coderhouse">
+    <meta name="robots" content="index, follow">
+
     <title>SubMenu</title>
 
 
@@ -14,15 +20,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <meta name="description" content="Disfruta de los mejores helados artesanales elaborados con ingredientes naturales y mucho amor. Ven y prueba nuestras delicias únicas y frescas.">
     <link rel="icon" href="https://juanchehin.github.io/torucream/assets/img/favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
+
 <body>
     <!-- ==================================== -->
     <!-- ========== HEADER ================ -->
-     <!-- ==================================== -->
+    <!-- ==================================== -->
     <header>
         <h1 class="titulo">torucream</h1>
         <i class="fas fa-bars hamburger-icon menu-icon"></i>
@@ -30,12 +36,12 @@
         <img src="../assets/img/helado_inclinado.png" alt="Imagen" class="imagen-izquierda">
 
         <img src="../assets/img/amarillo.home.png" alt="Imagen" class="imagen-derecha desktop-content">
-        <img src="../assets/img/amarillo.home.png" alt="Imagen" class="imagen-derecha-mobile mobile-content">        
+        <img src="../assets/img/amarillo.home.png" alt="Imagen" class="imagen-derecha-mobile mobile-content">
     </header>
-    
+
     <!-- ==================================== -->
     <!-- ========== FIN HEADER ================ -->
-     <!-- ==================================== -->
+    <!-- ==================================== -->
 
     <div class="image-container">
         <img src="../assets/img/mano.hombre.png" alt="Imagen" class="imagen-izquierda-mano">
@@ -46,13 +52,13 @@
     <div class="container">
         <br><br><br>
         <div>
-            <h2 class="slogan desktop-content">Helados que derriten tu corazón,</h2> 
+            <h2 class="slogan desktop-content">Helados que derriten tu corazón,</h2>
             <h2 class="slogan2 desktop-content">Donde cada sabor es una aventura</h2>
 
-            
-            <h2 class="slogan-mobile mobile-content">Helados que derriten tu corazón,</h2> 
+
+            <h2 class="slogan-mobile mobile-content">Helados que derriten tu corazón,</h2>
             <h2 class="slogan2-mobile mobile-content">Donde cada sabor es una aventura</h2>
-        
+
             <!-- ================= MOBILE =================== -->
             <div class="mobile-content menu-mobile">
                 <div>
@@ -82,16 +88,16 @@
     </div>
     <!--  -->
     <div class="white-background mobile-content" id="white-mobile">
-        <div class="image-container"> 
+        <div class="image-container">
             <!-- Imagen pequeña izquierda -->
             <div class="image-small">
                 <img src="../assets/img/flecha-izquierda.png" alt="Imagen Pequeña 1">
             </div>
-            
+
             <div class="image-container-s">
                 <img src="../assets/img/helados-slider.png" alt="Imagen">
-            </div>    
-            
+            </div>
+
             <!-- Imagen pequeña derecha -->
             <div class="image-small">
                 <img src="../assets/img/flecha-derecha.png" alt="Imagen Pequeña 2">
@@ -101,18 +107,17 @@
             <span>FRUTALES</span>
             <span>CREMOSOS</span>
         </div>
-        
+
         <div class="center-button">
             <button class="order-button">PEDIR AHORA</button>
         </div>
     </div>
 
-    
-     <script>       
 
+    <script>
         function detectarDispositivo() {
             const anchoPantalla = window.innerWidth;
-            console.log("anchoPantalla ",anchoPantalla);
+            console.log("anchoPantalla ", anchoPantalla);
 
             if (anchoPantalla <= 767) {
                 console.log("Estás en un dispositivo móvil");
@@ -137,7 +142,7 @@
         function redirectCremosos() {
             const localUrl = 'file:///D:/dev/torucream'; // Ajusta según tu entorno local
             const productionUrl = 'https://torucream.free.nf/pages/helados-cremosos.html'; // Ajusta según tu servidor
-            
+
             if (window.location.origin === 'file://') {
                 window.location.href = 'helados-cremosos.html';
             } else {
@@ -148,7 +153,7 @@
         function redirectFrutales() {
             const localUrl = 'file:///D:/dev/torucream'; // Ajusta según tu entorno local
             const productionUrl = 'https://torucream.free.nf/pages/helados-frutales.html'; // Ajusta según tu servidor
-            
+
             if (window.location.origin === 'file://') {
                 window.location.href = 'helados-frutales.html';
             } else {
@@ -159,7 +164,7 @@
         function boton_inicio() {
             const localUrl = 'file:///D:/dev/torucream'; // Ajusta según tu entorno local
             const productionUrl = 'https://torucream.free.nf/'; // Ajusta según tu servidor
-            
+
             if (window.location.origin === 'file://') {
                 window.location.href = '../index.html';
             } else {
@@ -168,4 +173,5 @@
         }
     </script>
 </body>
+
 </html>
