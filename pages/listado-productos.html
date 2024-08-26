@@ -23,48 +23,43 @@
         <h1 class="titulo">LISTA DE PRODUCTOS</h1>
         <i class="fas fa-bars hamburger-icon menu-icon"></i>
 
-        <table>
-            <tbody>
-                <tr class="row-background">
-                    <td colspan="3">
-                        <div class="row-content">
-                            <img src="../assets/img/helado-amarillo.png" alt="Producto">
-                            <div class="text-container">
-                                <span class="top-text">MANGO</span>
-                                <span class="bottom-text">1 unidad</span>
-                            </div>
-                            <div class="price">$3000</div>
-                        </div>
-                    </td>
-                </tr>
-                <!-- -->
-                <tr class="row-background">
-                    <td colspan="3">
-                        <div class="row-content">
-                            <img src="../assets/img/helado-amarillo.png" alt="Producto">
-                            <div class="text-container">
-                                <span class="top-text">AMERICANA</span>
-                                <span class="bottom-text">2 unidades</span>
-                            </div>
-                            <div class="price">$6000</div>
-                        </div>
-                    </td>
-                </tr>
-                <!--  -->
-                <tr class="row-background">
-                    <td colspan="3">
-                        <div class="row-content">
-                            <img src="../assets/img/helado-amarillo.png" alt="Producto">
-                            <div class="text-container">
-                                <span class="top-text">CHOCOLATE</span>
-                                <span class="bottom-text">2 unidades</span>
-                            </div>
-                            <div class="price">$6000</div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- ========== grid-container =========== -->
+        <div class="grid-container">
+            <div class="row-background">
+                <div class="row-content">
+                    <img src="../assets/img/helado-amarillo.png" alt="Producto">
+                    <div class="text-container">
+                        <span class="top-text">MANGO</span>
+                        <span class="bottom-text">1 unidad</span>
+                    </div>
+                    <div class="price">$3000</div>
+                </div>
+            </div>
+
+            <div class="row-background">
+                <div class="row-content">
+                    <img src="../assets/img/helado-amarillo.png" alt="Producto">
+                    <div class="text-container">
+                        <span class="top-text">AMERICANA</span>
+                        <span class="bottom-text">2 unidades</span>
+                    </div>
+                    <div class="price">$6000</div>
+                </div>
+            </div>
+
+            <div class="row-background">
+                <div class="row-content">
+                    <img src="../assets/img/helado-amarillo.png" alt="Producto">
+                    <div class="text-container">
+                        <span class="top-text">CHOCOLATE</span>
+                        <span class="bottom-text">2 unidades</span>
+                    </div>
+                    <div class="price">$6000</div>
+                </div>
+            </div>
+        </div>
+        <!-- ================================ -->
+
         <div class="bottom-section">
             <img src="../assets/img/helado_lineas.png" alt="Imagen al fondo">
             <div class="text-center">
@@ -85,66 +80,57 @@
         <h1 class="titulo">LISTA DE PRODUCTOS</h1>
         <i class="fas fa-bars hamburger-icon menu-icon"></i>
 
-        <table>
-            <tbody>
-                <tr class="row-background">
-                    <td colspan="3">
-                        <div class="row-content">
-                            <div class="text-container">
-                                <span class="top-text">AMERICANA</span>
-                                <span class="bottom-text">1 unidad</span>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <!-- -->
-                <tr class="row-background">
-                    <td colspan="3">
-                        <div class="row-content">
-                            <div class="text-container">
-                                <span class="top-text">AMERICANA</span>
-                                <span class="bottom-text">1 UNIDAD</span>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <!--  -->
-                <tr class="row-background">
-                    <td colspan="3">
-                        <div class="row-content">
-                            <div class="text-container">
-                                <span class="top-text">ANANA</span>
-                                <span class="bottom-text">2 UNIDAD</span>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <!--  -->
-                <tr class="row-background">
-                    <td colspan="3">
-                        <div class="row-content">
-                            <div class="text-container">
-                                <span class="top-text">OREO</span>
-                                <span class="bottom-text">1 UNIDAD</span>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="bottom-section">
-            <div class="text-center">
-                <button class="order-button">PAGAR</button>
-            </div>
-            <div class="text-right">
-                <div class="text-container items-precios">
-                    <span class="top-text">Subtotal     $9000</span>
-                    <span class="bottom-text">Envio     $1000</span>
-                    <span class="bottom-text">IVA   -</span>
-                    <span class="bottom-text">Total     $10000</span>
+        <div class="grid-container">
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="../assets/img/mantecado.png" alt="Ice Cream">
+                    <div class="product-details">
+                        <p>AMERICANA</p>
+                        <p>1 UNIDAD</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../assets/img/mantecado.png" alt="Ice Cream">
+                    <div class="product-details">
+                        <p>ANANA</p>
+                        <p>2 UNIDAD</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="../assets/img/mantecado.png" alt="Ice Cream">
+                    <div class="product-details">
+                        <p>OREO</p>
+                        <p>1 UNIDAD</p>
+                    </div>
                 </div>
             </div>
+
+            <div class="payment-summary">
+                <div class="summary-item">
+                    <span class="label">Subtotal</span>
+                    <span class="value">$9000</span>
+                </div>
+                <div class="summary-item">
+                    <span class="label">Envío</span>
+                    <span class="value">$1000</span>
+                </div>
+                <div class="summary-item">
+                    <span class="label">IVA</span>
+                    <span class="value">$0</span>
+                </div>
+                <div class="summary-item">
+                    <span class="label">Total</span>
+                    <span class="value">$10000</span>
+                </div>
+            </div>
+
+            <div class="pay-button">
+                <button>PAGAR</button>
+            </div>
         </div>
+
     </div>
 
     <script>
