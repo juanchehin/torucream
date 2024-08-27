@@ -48,7 +48,7 @@
         padding: 10px;
     }
     .row-background {
-        background-color: #f5f5f5;
+        background-color: rgba(255, 182, 193, 0.5);
         /* Color de fondo para cada fila */
         padding: 10px;
         /* Relleno alrededor de cada fila */
@@ -114,29 +114,31 @@
         font-size: 22px;
         font-weight: bold;
     }
-    .menu-icon {
-        position: absolute;
-        width: 54px;
-        height: 56px;
-        left: 1280px;
-        top: 19px;
-        font-size: 24px;
-        cursor: pointer;
-        z-index: 1;
-        /* Asegurar que el header quede encima de la imagen de fondo */
-    }
-    .table-mobile {
-        width: 500px;
-        /* Establece el ancho del div a 500 píxeles */
-        height: 200px;
-    }
     .titulo-crem {
-        margin-top: 50px;
         display: flex;
         justify-content: center;
-        /* Centra horizontalmente */
+        /* Centra el contenido horizontalmente */
         align-items: center;
-        /* Centra verticalmente */
+        /* Centra el contenido verticalmente */
+        position: relative;
+        /* Permite posicionar el ícono de hamburguesa */
+        padding: 10px;
+        padding: 20px 10px 10px 10px;
+    }
+    .hel-crem {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        /* Centra el texto "CREMOSOS" en el medio de la pantalla */
+    }
+    .hamburger-icon {
+        position: absolute;
+        right: 0;
+        font-size: 24px;
+        cursor: pointer;
     }
 }
 
@@ -280,12 +282,10 @@
         width: 14px;
         height: 16px;
         right: 30px;
-        /* Alinea la imagen al borde derecho */
         top: 9px;
         font-size: 25px;
         cursor: pointer;
         z-index: 1;
-        /* Asegurar que el header quede encima de la imagen de fondo */
     }
     .white-background {
         /* display: flex; */
@@ -306,6 +306,12 @@
     }
     .container {
         margin-top: 1px;
+        margin: 0 auto;
+        padding: 0 15px;
+        /* Usa padding en lugar de márgenes negativos */
+        width: 100%;
+        overflow-x: hidden;
+        max-width: 100%;
     }
     .half {
         flex: 1;
