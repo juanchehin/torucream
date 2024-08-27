@@ -10,11 +10,21 @@ cursive;
 $font-family_3: "Cookie",
 cursive;
 $font-family_4: "Arial, sans-serif";
-$background-color_1: rgba(255, 182, 193, 0.5);
-$background-color_2: white;
-$background-color_3: #f5f5f5;
-$background-color_4: lightblue;
-$background-color_5: #0056b3;
+$background-color_1: #f5f5f5;
+$background-color_2: rgba(255, 182, 193, 0.5);
+$background-color_3: white;
+$background-color_4: #f2f2f2;
+$background-color_5: lightblue;
+$background-color_6: #0056b3;
+
+/* Estilos específicos para pantallas chicas (mobile) */
+
+
+/* styles.css */
+
+
+/* styles.css */
+
 
 /* styles.css */
 
@@ -39,23 +49,25 @@ $background-color_5: #0056b3;
 
 /* Estilos específicos para pantallas grandes (escritorios) */
 
-
-/* styles.css */
-
-
-/* Asegúrate de que el contenedor esté posicionado relativamente */
-
 @media (max-width: 767px) {
     .desktop-content {
+        display: none;
         display: none;
     }
     .tablet-content {
         display: none;
+        display: none;
     }
     .mobile-content {
         display: block;
+        display: block;
     }
     body {
+        background-image: url(../../img/fondo.solo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-image: url(../../img/fondo.solo.jpg);
         background-size: cover;
         background-position: center;
@@ -69,13 +81,26 @@ $background-color_5: #0056b3;
         background-repeat: no-repeat;
         width: 100%;
         height: 500px;
+        background-image: url(../../img/fondo.solo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
     }
     .titulo {
+        text-align: center;
+        font-family: $font-family_1;
+        font-size: 45px;
         text-align: center;
         font-family: $font-family_1;
         font-size: 40px;
     }
     .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
         display: grid;
         gap: 10px;
         padding: 10px;
@@ -83,16 +108,24 @@ $background-color_5: #0056b3;
     .row-background {
         background-color: $background-color_1;
         padding: 10px;
+        background-color: $background-color_2;
+        padding: 10px;
     }
     .row-content {
+        display: flex;
+        align-items: center;
         display: flex;
         align-items: center;
     }
     .text-container {
         display: flex;
         align-items: center;
+        display: flex;
+        align-items: center;
     }
     .top-text {
+        font-size: 1.2em;
+        font-weight: bold;
         font-size: 1.2em;
         font-weight: bold;
     }
@@ -101,7 +134,13 @@ $background-color_5: #0056b3;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
         img {
+            max-width: 100px;
+            height: auto;
             max-width: 100px;
             height: auto;
         }
@@ -109,12 +148,27 @@ $background-color_5: #0056b3;
             margin-top: 90px;
             text-align: center;
             flex: 1;
+            margin-top: 90px;
+            text-align: center;
+            flex: 1;
         }
         .text-right {
+            text-align: right;
             text-align: right;
         }
     }
     .order-button {
+        color: $color_1;
+        font-size: 19px;
+        width: 208px;
+        height: 44px;
+        left: 268px;
+        top: 900px;
+        background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
+        box-shadow: 0px 4px 4px #FB78F5;
+        border-radius: 48px;
+        border: none;
+        transform: translateY(-50px);
         color: $color_1;
         font-size: 19px;
         width: 208px;
@@ -131,6 +185,13 @@ $background-color_5: #0056b3;
         font-family: $font-family_1;
         font-size: 22px;
         font-weight: bold;
+        font-family: $font-family_1;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .table-mobile {
+        width: 500px;
+        height: 200px;
     }
     .titulo-crem {
         display: flex;
@@ -211,7 +272,7 @@ $background-color_5: #0056b3;
     .titulo {
         position: absolute;
         top: 5px;
-        left: 280px;
+        left: 80px;
         color: $color_2;
         font-family: $font-family_2;
         font-size: 2em;
@@ -288,7 +349,7 @@ $background-color_5: #0056b3;
         z-index: 1;
     }
     .white-background {
-        background-color: $background-color_2;
+        background-color: $background-color_3;
         border: none;
         width: 100%;
         height: 100%;
@@ -296,11 +357,6 @@ $background-color_5: #0056b3;
     }
     .container {
         margin-top: 1px;
-        margin: 0 auto;
-        padding: 0 15px;
-        width: 100%;
-        overflow-x: hidden;
-        max-width: 100%;
     }
     .half {
         flex: 1;
@@ -315,39 +371,20 @@ $background-color_5: #0056b3;
             border-bottom: 2px solid black;
         }
     }
-    .grid-container {
-        display: grid;
-        gap: 10px;
-        padding: 10px;
-    }
-    .row-background {
-        background-color: $background-color_3;
-        padding: 10px;
-    }
-    .row-content {
-        display: flex;
-        align-items: center;
-    }
-    .text-container {
-        display: flex;
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
+    table {
         width: 100%;
-        padding: 10px 0;
-        box-sizing: border-box;
-        font-weight: bold;
-        span {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 18px;
-        }
+        border-collapse: collapse;
     }
-    .top-text {
-        font-size: 1.2em;
-        font-weight: bold;
+    th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        background-color: $background-color_4;
+    }
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
     }
     .short-div {
         height: 100px;
@@ -366,9 +403,24 @@ $background-color_5: #0056b3;
     }
     .full-width {
         width: 100%;
-        background-color: $background-color_4;
+        background-color: $background-color_5;
         padding: 20px;
         box-sizing: border-box;
+    }
+    .text-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        box-sizing: border-box;
+        font-weight: bold;
+        span {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
     }
     .order-button {
         margin-top: 90px;
@@ -388,7 +440,7 @@ $background-color_5: #0056b3;
         box-shadow: 0px 4px 4px #FB78F5;
         border-radius: 48px;
         &:hover {
-            background-color: $background-color_5;
+            background-color: $background-color_6;
         }
     }
     .center-button {
@@ -483,31 +535,6 @@ $background-color_5: #0056b3;
     .mobile-content {
         display: none;
     }
-    body {
-        font-family: $font-family_4;
-        background-image: url(../../img/fondo.solo.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        overflow-x: hidden;
-    }
-    header {
-        padding: 20px;
-        text-align: center;
-    }
-    main {
-        padding: 20px;
-        text-align: center;
-    }
-    footer {
-        padding: 20px;
-        text-align: center;
-    }
-    .contenedor {
-        position: relative;
-        padding: 20px;
-    }
     .contenedor-listado {
         text-align: center;
         margin: 0 auto;
@@ -544,15 +571,5 @@ $background-color_5: #0056b3;
         display: flex;
         justify-content: flex-end;
         height: 30vh;
-    }
-    .menu-icon {
-        position: absolute;
-        width: 54px;
-        height: 56px;
-        left: 1280px;
-        top: 19px;
-        font-size: 24px;
-        cursor: pointer;
-        z-index: 1;
     }
 }

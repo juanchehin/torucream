@@ -3,409 +3,421 @@ $color_2: #fff;
 $color_3: white;
 $color_4: #f061c5;
 $font-family_1: "Arial, sans-serif";
-$font-family_2: "Cookie", cursive;
-$font-family_3: "Love Ya Like A Sister", cursive;
+$font-family_2: "Cookie",
+cursive;
+$font-family_3: "Love Ya Like A Sister",
+cursive;
 $background-color_1: white;
 $background-color_2: #f2f2f2;
 $background-color_3: lightblue;
 $background-color_4: #0056b3;
 
 /* Estilos específicos para pantallas medianas (tablets) */
+
+
 /* Estilos específicos para pantallas pequeñas (móviles) */
+
+
 /* Estilos para la imagen */
+
+
 /* Estilo para la imagen */
+
+
 /* Estilos para la imagen */
+
 @media (min-width: 768px) and (max-width: 1023px) {
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		font-family: $font-family_1;
-		background-image: url(../../img/fondo.solo.jpg);
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		overflow-x: hidden;
-		min-height: 100vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		overflow: hidden;
-	}
-	html {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		overflow: hidden;
-	}
-	.container-responsive {
-		max-width: 1200px;
-		padding: 20px;
-		text-align: center;
-		margin: 0;
-		padding: 0;
-	}
-	* {
-		max-width: 1200px;
-		padding: 20px;
-		text-align: center;
-		margin: 0;
-		padding: 0;
-	}
-	.white-background {
-		display: flex;
-		height: 100%;
-		width: 100%;
-		background-color: $background-color_1;
-		border: none;
-	}
-	.container {
-		display: flex;
-		flex-direction: column;
-		height: 100vh;
-	}
-	.half {
-		flex: 1;
-		overflow: auto;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		border: none;
-		margin: 0 auto;
-		&:first-child {
-			border-bottom: 2px solid black;
-		}
-	}
-	table {
-		width: 100%;
-		border-collapse: collapse;
-	}
-	th {
-		border: 1px solid black;
-		padding: 8px;
-		text-align: left;
-		background-color: $background-color_2;
-	}
-	td {
-		border: 1px solid black;
-		padding: 8px;
-		text-align: left;
-	}
-	.slogan {
-		color: $color_1;
-		font-family: $font-family_2;
-	}
-	.slogan2 {
-		color: $color_1;
-		font-family: $font-family_2;
-	}
-	.short-div {
-		height: 100px;
-	}
-	.image-container-s {
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			width: 100%;
-			height: auto;
-			display: block;
-		}
-		width: 100%;
-		padding: 10px 0;
-	}
-	.full-width {
-		width: 100%;
-		background-color: $background-color_3;
-		padding: 20px;
-		box-sizing: border-box;
-	}
-	.text-container {
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-		padding: 10px 0;
-		box-sizing: border-box;
-		font-weight: bold;
-		span {
-			flex: 1;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 18px;
-		}
-	}
-	.order-button {
-		margin-top: 90px;
-		padding: 10px 20px;
-		font-size: 12px;
-		color: $color_2;
-		border: none;
-		cursor: pointer;
-		transition: background-color 0.3s;
-		color: $color_3;
-		font-size: 24px;
-		width: 308px;
-		height: 44px;
-		left: 268px;
-		top: 936px;
-		background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
-		box-shadow: 0px 4px 4px #FB78F5;
-		border-radius: 48px;
-		&:hover {
-			background-color: $background-color_4;
-		}
-	}
-	.image-container {
-		display: flex;
-		align-items: center;
-		width: 100%;
-		padding: 10px 0;
-		.image-small {
-			flex: 1;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			img {
-				height: 100%;
-				width: 50px;
-				display: block;
-			}
-		}
-		.image-large {
-			flex: 3;
-			display: flex;
-			justify-content: center;
-			img {
-				width: 100%;
-				height: auto;
-				display: block;
-			}
-		}
-	}
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: $font-family_1;
+        background-image: url(../../img/fondo.solo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    .container-responsive {
+        max-width: 1200px;
+        padding: 20px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    * {
+        max-width: 1200px;
+        padding: 20px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .white-background {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: $background-color_1;
+        border: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .half {
+        flex: 1;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: none;
+        margin: 0 auto;
+        &:first-child {
+            border-bottom: 2px solid black;
+        }
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        background-color: $background-color_2;
+    }
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    .slogan {
+        color: $color_1;
+        font-family: $font-family_2;
+    }
+    .slogan2 {
+        color: $color_1;
+        font-family: $font-family_2;
+    }
+    .short-div {
+        height: 100px;
+    }
+    .image-container-s {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        width: 100%;
+        padding: 10px 0;
+    }
+    .full-width {
+        width: 100%;
+        background-color: $background-color_3;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .text-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        box-sizing: border-box;
+        font-weight: bold;
+        span {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+    }
+    .order-button {
+        margin-top: 90px;
+        padding: 10px 20px;
+        font-size: 12px;
+        color: $color_2;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        color: $color_3;
+        font-size: 24px;
+        width: 308px;
+        height: 44px;
+        left: 268px;
+        top: 936px;
+        background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
+        box-shadow: 0px 4px 4px #FB78F5;
+        border-radius: 48px;
+        &:hover {
+            background-color: $background-color_4;
+        }
+    }
+    .image-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+        .image-small {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 100%;
+                width: 50px;
+                display: block;
+            }
+        }
+        .image-large {
+            flex: 3;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+    }
 }
+
 @media (max-width: 767px) {
-	.desktop-content {
-		display: none;
-	}
-	.tablet-content {
-		display: none;
-	}
-	.mobile-content {
-		display: block;
-	}
-	.titulo {
-		position: absolute;
-		top: 60px;
-		left: 50px;
-		color: $color_4;
-		font-family: $font-family_3;
-		font-size: 4em;
-		font-weight: 100;
-	}
-	.imagen-izquierda {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100px;
-		height: auto;
-	}
-	.imagen-izquierda-mano {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		max-width: 150px;
-		height: auto;
-		position: absolute;
-		left: 0;
-		top: 29%;
-		transform: translateY(-50%);
-	}
-	.imagen-derecha-mobile {
-		position: absolute;
-		top: 0;
-		right: 0;
-		margin: 10px;
-		max-width: 260px;
-	}
-	.imagen-derecha-abajo-mobile {
-		bottom: 0;
-		right: 2px;
-		width: auto;
-		height: auto;
-		max-width: 100px;
-		float: right;
-		margin-left: 10px;
-	}
-	.slogan-mobile {
-		color: $color_1;
-		font-family: $font-family_2;
-		font-size: 1em;
-		font-weight: 200;
-		margin-left: 40px;
-		margin-top: 100px;
-		margin-bottom: 90px;
-	}
-	.slogan2-mobile {
-		color: $color_1;
-		font-family: $font-family_2;
-		font-size: 1em;
-		font-weight: 200;
-		margin-right: -240px;
-		margin-top: -50px;
-	}
-	.white-background {
-		display: flex;
-		height: 100%;
-		width: 100%;
-		background-color: $background-color_1;
-		border: none;
-	}
-	html {
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		overflow: hidden;
-	}
-	body {
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		overflow: hidden;
-		font-family: $font-family_1;
-		background-image: url(../../img/fondo.solo.jpg);
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		overflow-x: hidden;
-	}
-	.container {
-		display: flex;
-		flex-direction: column;
-		height: 100vh;
-	}
-	.half {
-		flex: 1;
-		overflow: auto;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		border: none;
-		margin: 0 auto;
-		&:first-child {
-			border-bottom: 2px solid black;
-		}
-	}
-	table {
-		width: 100%;
-		border-collapse: collapse;
-	}
-	th {
-		border: 1px solid black;
-		padding: 8px;
-		text-align: left;
-		background-color: $background-color_2;
-	}
-	td {
-		border: 1px solid black;
-		padding: 8px;
-		text-align: left;
-	}
-	.short-div {
-		height: 100px;
-	}
-	.image-container-s {
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			width: 100%;
-			height: auto;
-			display: block;
-		}
-		width: 100%;
-		padding: 10px 0;
-	}
-	.full-width {
-		width: 100%;
-		background-color: $background-color_3;
-		padding: 20px;
-		box-sizing: border-box;
-	}
-	.text-container {
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-		padding: 10px 0;
-		box-sizing: border-box;
-		font-weight: bold;
-		span {
-			flex: 1;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 18px;
-		}
-	}
-	.order-button {
-		margin-top: 90px;
-		padding: 10px 20px;
-		font-size: 12px;
-		color: $color_2;
-		border: none;
-		cursor: pointer;
-		transition: background-color 0.3s;
-		color: $color_3;
-		font-size: 24px;
-		width: 308px;
-		height: 44px;
-		left: 268px;
-		top: 936px;
-		background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
-		box-shadow: 0px 4px 4px #FB78F5;
-		border-radius: 48px;
-		&:hover {
-			background-color: $background-color_4;
-		}
-	}
-	.image-container {
-		display: flex;
-		align-items: center;
-		width: 100%;
-		padding: 10px 0;
-		.image-small {
-			flex: 1;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			img {
-				height: 100%;
-				width: 50px;
-				display: block;
-			}
-		}
-		.image-large {
-			flex: 3;
-			display: flex;
-			justify-content: center;
-			img {
-				width: 100%;
-				height: auto;
-				display: block;
-			}
-		}
-	}
+    .desktop-content {
+        display: none;
+    }
+    .tablet-content {
+        display: none;
+    }
+    .mobile-content {
+        display: block;
+    }
+    .titulo {
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        color: $color_4;
+        font-family: $font-family_3;
+        font-size: 4em;
+        font-weight: 100;
+    }
+    .imagen-izquierda {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: auto;
+    }
+    .imagen-izquierda-mano {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 150px;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 29%;
+        transform: translateY(-50%);
+    }
+    .imagen-derecha-mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        max-width: 260px;
+    }
+    .imagen-derecha-abajo-mobile {
+        bottom: 0;
+        right: 2px;
+        width: auto;
+        height: auto;
+        max-width: 100px;
+        float: right;
+        margin-left: 10px;
+    }
+    .slogan-mobile {
+        color: $color_1;
+        font-family: $font-family_2;
+        font-size: 1em;
+        font-weight: 200;
+        margin-left: 40px;
+        margin-top: 100px;
+        margin-bottom: 90px;
+    }
+    .slogan2-mobile {
+        color: $color_1;
+        font-family: $font-family_2;
+        font-size: 1em;
+        font-weight: 200;
+        margin-right: -240px;
+        margin-top: -50px;
+    }
+    .white-background {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: $background-color_1;
+        border: none;
+    }
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        font-family: $font-family_1;
+        background-image: url(../../img/fondo.solo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .half {
+        flex: 1;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: none;
+        margin: 0 auto;
+        &:first-child {
+            border-bottom: 2px solid black;
+        }
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        background-color: $background-color_2;
+    }
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    .short-div {
+        height: 100px;
+    }
+    .image-container-s {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        width: 100%;
+        padding: 10px 0;
+    }
+    .full-width {
+        width: 100%;
+        background-color: $background-color_3;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .text-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        box-sizing: border-box;
+        font-weight: bold;
+        span {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+    }
+    .order-button {
+        margin-top: 90px;
+        padding: 10px 20px;
+        font-size: 12px;
+        color: $color_2;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        color: $color_3;
+        font-size: 24px;
+        width: 308px;
+        height: 44px;
+        left: 268px;
+        top: 936px;
+        background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
+        box-shadow: 0px 4px 4px #FB78F5;
+        border-radius: 48px;
+        &:hover {
+            background-color: $background-color_4;
+        }
+    }
+    .image-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+        .image-small {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 100%;
+                width: 50px;
+                display: block;
+            }
+        }
+        .image-large {
+            flex: 3;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+    }
 }
