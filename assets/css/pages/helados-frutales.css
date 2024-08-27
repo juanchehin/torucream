@@ -118,33 +118,151 @@
         font-size: 22px;
         font-weight: bold;
     }
-    .menu-icon {
-        position: absolute;
-        width: 54px;
-        height: 56px;
-        left: 1280px;
-        top: 19px;
-        font-size: 24px;
-        cursor: pointer;
-        z-index: 1;
-        /* Asegurar que el header quede encima de la imagen de fondo */
-    }
     .table-mobile {
         width: 500px;
         /* Establece el ancho del div a 500 píxeles */
         height: 200px;
     }
-    .titulo-crem {
-        margin-top: 50px;
+    .desktop-content {
+        display: none;
+    }
+    .tablet-content {
+        display: none;
+    }
+    .mobile-content {
+        display: block;
+    }
+    /* styles.css */
+    body {
+        background-image: url(../../img/fondo.solo.jpg);
+        background-size: cover;
+        /* Ajusta la imagen para cubrir todo el área del body */
+        background-position: center;
+        /* Centra la imagen */
+        background-repeat: no-repeat;
+        /* Evita que la imagen se repita */
+        background-attachment: fixed;
+        /* Mantiene la imagen fija al hacer scroll */
+    }
+    /* styles.css */
+    .background-div {
+        background-image: url(../../img/fondo.solo.jpg);
+        background-size: cover;
+        /* Ajusta la imagen para cubrir todo el área del div */
+        background-position: center;
+        /* Centra la imagen */
+        background-repeat: no-repeat;
+        /* Evita que la imagen se repita */
+        width: 100%;
+        /* Ajusta el ancho del div */
+        height: 500px;
+        /* Ajusta la altura del div */
+    }
+    .titulo {
+        text-align: center;
+        /* Centra el texto y la imagen dentro del body */
+        font-family: 'Choco Cookie', sans-serif;
+        /* Aplica la fuente Choco Cookie */
+        font-size: 40px;
+    }
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        /* Espacio entre las filas */
+        padding: 10px;
+    }
+    .row-background {
+        background-color: rgba(255, 182, 193, 0.5);
+        /* Color de fondo para cada fila */
+        padding: 10px;
+        /* Relleno alrededor de cada fila */
+    }
+    .row-content {
         display: flex;
-        justify-content: center;
-        /* Centra horizontalmente */
+        /* Usa Flexbox para organizar el contenido dentro de cada fila */
         align-items: center;
-        /* Centra verticalmente */
+        /* Centra el contenido verticalmente */
+    }
+    .text-container {
+        display: flex;
+        align-items: center;
+        /* Centra el texto verticalmente */
+    }
+    .top-text {
+        font-size: 1.2em;
         font-weight: bold;
     }
-    .hel-crem {
+    .bottom-section {
+        display: flex;
+        justify-content: space-between;
+        /* Distribuye el espacio entre los elementos */
+        align-items: center;
+        /* Alinea los elementos verticalmente al centro */
+        padding: 20px;
+        /* Espacio interno para que no quede pegado al borde */
+    }
+    .bottom-section img {
+        max-width: 100px;
+        /* Ajusta el tamaño de la imagen */
+        height: auto;
+    }
+    .bottom-section .text-center {
+        margin-top: 90px;
+        text-align: center;
+        flex: 1;
+        /* Ocupa el espacio restante entre la imagen y el texto de la derecha */
+    }
+    .bottom-section .text-right {
+        text-align: right;
+    }
+    .order-button {
+        color: white;
+        font-size: 19px;
+        /* Aumenta el tamaño de la letra */
+        /* Action Row / Single Actions */
+        width: 208px;
+        height: 44px;
+        left: 268px;
+        top: 900px;
+        /*  */
+        background: linear-gradient(0deg, #FB78F5, #FB78F5), #FB78F5;
+        box-shadow: 0px 4px 4px #FB78F5;
+        border-radius: 48px;
+        border: none;
+        /* Quita el borde */
+        transform: translateY(-50px);
+    }
+    .items-precios {
+        font-family: 'Choco Cookie', sans-serif;
+        /* Aplica la fuente Choco Cookie */
+        font-size: 22px;
         font-weight: bold;
+    }
+    .titulo-crem {
+        display: flex;
+        justify-content: center;
+        /* Centra el contenido horizontalmente */
+        align-items: center;
+        /* Centra el contenido verticalmente */
+        position: relative;
+        /* Permite posicionar el ícono de hamburguesa */
+        padding: 10px;
+        padding: 20px 10px 10px 10px;
+    }
+    .hel-crem {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        /* Centra el texto "CREMOSOS" en el medio de la pantalla */
+    }
+    .hamburger-icon {
+        position: absolute;
+        right: 0;
+        font-size: 24px;
+        cursor: pointer;
     }
 }
 
