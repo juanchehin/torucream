@@ -18,6 +18,8 @@
         /* Evita que la imagen se repita */
         background-attachment: fixed;
         /* Mantiene la imagen fija al hacer scroll */
+        overflow-x: hidden;
+        /* Oculta el desbordamiento horizontal */
     }
     /* styles.css */
     .background-div {
@@ -99,6 +101,10 @@
         border-radius: 20px;
         font-size: 16px;
         cursor: pointer;
+    }
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
 
